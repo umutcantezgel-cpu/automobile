@@ -1,0 +1,1 @@
+BEGIN { print "awk works" }

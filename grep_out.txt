@@ -1,0 +1,130 @@
+src/app/ueber-uns/page.tsx:80:      transition: { duration: getDuration(0.6), ease: [0.16, 1, 0.3, 1] as const },
+src/app/ueber-uns/page.tsx:86:    visible: { transition: { staggerChildren: 0.1 } },
+src/app/ueber-uns/page.tsx:100:            transition={{ duration: getDuration(0.5), ease: "easeOut" as const }}
+src/app/ueber-uns/page.tsx:109:            transition={{ duration: getDuration(0.6), delay: 0.1, ease: [0.16, 1, 0.3, 1] as const }}
+src/app/ueber-uns/page.tsx:126:            transition={{ duration: getDuration(0.8) }}
+src/app/ueber-uns/page.tsx:134:              transition={{ duration: getDuration(0.7), ease: [0.16, 1, 0.3, 1] as const }}
+src/app/ueber-uns/page.tsx:149:              transition={{ duration: getDuration(0.7), delay: 0.15, ease: [0.16, 1, 0.3, 1] as const }}
+src/app/ueber-uns/page.tsx:198:            transition={{ duration: getDuration(0.6), ease: [0.16, 1, 0.3, 1] as const }}
+src/app/ueber-uns/page.tsx:281:            transition={{ duration: getDuration(0.6), ease: [0.16, 1, 0.3, 1] as const }}
+src/app/ueber-uns/page.tsx:326:            transition={{ duration: getDuration(0.6), ease: [0.16, 1, 0.3, 1] as const }}
+src/app/calculator/page.tsx:243:            transition={{ duration: getDuration(0.8), ease: "easeOut" as const }}
+src/app/calculator/page.tsx:258:            transition={{ duration: getDuration(0.8), ease: "easeOut" as const, delay: 0.15 }}
+src/app/calculator/page.tsx:291:            transition={{ duration: getDuration(0.6), delay: i * 0.1, ease: "easeOut" as const }}
+src/app/calculator/page.tsx:547:            transition={{ duration: getDuration(0.6) }}
+src/app/calculator/page.tsx:576:              transition={{ duration: getDuration(0.5), delay: 0.1 }}
+src/app/calculator/page.tsx:649:              transition={{ duration: getDuration(0.5), delay: 0.2 }}
+src/app/inzahlungnahme/page.tsx:121:          transition={{ duration: getDuration(0.5), ease: "easeOut" as const }}
+src/app/inzahlungnahme/page.tsx:171:                transition={{ duration: getDuration(0.4), ease: [0.16, 1, 0.3, 1] as any }}
+src/app/inzahlungnahme/page.tsx:369:                      transition={{ delay: getDelay(0.2), type: "spring", stiffness: 200, damping: 20 }}
+src/app/inzahlungnahme/page.tsx:378:                      transition={{ delay: getDelay(0.3) }}
+src/app/inzahlungnahme/page.tsx:387:                      transition={{ delay: getDelay(0.4) }}
+src/app/inzahlungnahme/page.tsx:396:                      transition={{ delay: getDelay(0.5) }}
+src/app/inzahlungnahme/page.tsx:405:                      transition={{ delay: getDelay(0.6) }}
+src/app/kontakt/page.tsx:63:    transition: { duration: 0.6, ease: [0.16, 1, 0.3, 1] as const },
+src/app/kontakt/page.tsx:69:  visible: { transition: { staggerChildren: 0.1 } },
+src/app/kontakt/page.tsx:103:            transition={{ duration: getDuration(0.5), ease: "easeOut" as const }}
+src/app/kontakt/page.tsx:112:            transition={{ duration: getDuration(0.6), delay: getDelay(0.1), ease: [0.16, 1, 0.3, 1] as const }}
+src/app/kontakt/page.tsx:168:            transition={{ duration: getDuration(0.7), ease: [0.16, 1, 0.3, 1] as const }}
+src/app/kontakt/page.tsx:194:            transition={{ duration: getDuration(0.7), delay: getDelay(0.15), ease: [0.16, 1, 0.3, 1] as const }}
+src/app/kontakt/page.tsx:239:            transition={{ duration: getDuration(0.6), ease: [0.16, 1, 0.3, 1] as const }}
+src/app/kontakt/page.tsx:250:            transition={{ duration: getDuration(0.6), delay: getDelay(0.1), ease: [0.16, 1, 0.3, 1] as const }}
+src/app/karriere/page.tsx:182:                      transition={{ duration: getDuration(0.3), ease: "easeInOut" }}
+src/app/angebote/angebote.module.css:53:  transition-duration: var(--duration-150);
+src/app/angebote/page.tsx:42:    transition: { duration: 0, ease: [0.16, 1, 0.3, 1] as const },
+src/app/angebote/page.tsx:85:            transition={{ duration: getDuration(0.5), ease: "easeOut" as const }}
+src/app/angebote/page.tsx:94:            transition={{ duration: getDuration(0.6), delay: 0.1, ease: [0.16, 1, 0.3, 1] as const }}
+src/app/angebote/page.tsx:138:                transition: { duration: 0.6, ease: [0.16, 1, 0.3, 1] as const }
+src/app/angebote/page.tsx:172:              transition={{ duration: getDuration(0.3) }}
+src/app/preise/page.tsx:89:  duration: string;
+src/app/preise/page.tsx:462:    duration: 'Tag 1',
+src/app/preise/page.tsx:469:    duration: 'Woche 1–2',
+src/app/preise/page.tsx:476:    duration: 'Woche 2–4',
+src/app/preise/page.tsx:483:    duration: 'Woche 4–8',
+src/app/preise/page.tsx:490:    duration: 'Woche 8–9',
+src/app/preise/page.tsx:497:    duration: 'Fortlaufend',
+src/app/preise/page.tsx:660:  visible: { transition: { staggerChildren: 0.06 } },
+src/app/preise/page.tsx:684:          transition={{ duration: getDelay(0.25) }}
+src/app/preise/page.tsx:696:            transition={{ duration: getDelay(0.3), ease: [0.25, 0.46, 0.45, 0.94] as const }}
+src/app/preise/page.tsx:749:          transition={{ duration: getDelay(0.25) }}
+src/app/preise/page.tsx:761:            transition={{ duration: getDelay(0.3), ease: [0.25, 0.46, 0.45, 0.94] as const }}
+src/app/preise/page.tsx:797:        delay: shouldReduceMotion ? 0 : i * 0.08, 
+src/app/preise/page.tsx:798:        duration: getDelay(0.5), 
+src/app/preise/page.tsx:823:            transition={{ duration: getDelay(0.6) }}
+src/app/preise/page.tsx:907:            transition={{ duration: getDelay(0.5) }}
+src/app/preise/page.tsx:973:                        transition={{ duration: getDelay(0.25) }}
+src/app/preise/page.tsx:987:                        transition={{ duration: getDelay(0.4), ease: [0.25, 0.46, 0.45, 0.94] as const }}
+src/app/preise/page.tsx:1025:            transition={{ duration: getDelay(0.5) }}
+src/app/preise/page.tsx:1071:            transition={{ duration: getDelay(0.5) }}
+src/app/preise/page.tsx:1095:                    transition={{ delay: shouldReduceMotion ? 0 : i * 0.1, duration: getDelay(0.5), ease: [0.25, 0.46, 0.45, 0.94] as const }}
+src/app/preise/page.tsx:1160:            transition={{ duration: getDelay(0.5) }}
+src/app/preise/page.tsx:1178:                  transition={{ delay: shouldReduceMotion ? 0 : i * 0.1, duration: getDelay(0.4) }}
+src/app/preise/page.tsx:1195:                      transition={{ delay: shouldReduceMotion ? 0 : i * 0.1 + 0.2, duration: getDelay(0.6), ease: "easeOut" as const }}
+src/app/preise/page.tsx:1221:            transition={{ duration: getDelay(0.5) }}
+src/app/preise/page.tsx:1232:            transition={{ duration: getDelay(0.5) }}
+src/app/preise/page.tsx:1299:            transition={{ duration: getDelay(0.5) }}
+src/app/preise/page.tsx:1347:            transition={{ duration: getDelay(0.5) }}
+src/app/preise/page.tsx:1371:            transition={{ duration: getDelay(0.5) }}
+src/app/finanzierung/page.tsx:91:          transition={{ duration: getDuration(0.5), ease: "easeOut" as const }}
+src/app/finanzierung/page.tsx:108:            transition={{ duration: getDuration(0.5), delay: 0.1, ease: "easeOut" as const }}
+src/app/finanzierung/page.tsx:274:            transition={{ duration: getDuration(0.5), delay: 0.2, ease: "easeOut" as const }}
+src/app/finanzierung/page.tsx:370:          transition={{ duration: getDuration(0.5) }}
+src/app/fahrzeuge/page.tsx:99:      staggerChildren: 0.06,
+src/app/fahrzeuge/page.tsx:223:                      transition={{ duration: getDuration(0.15), ease: "easeOut" as const }}
+src/app/fahrzeuge/page.tsx:306:                  transition={{ duration: getDuration(0.3), ease: "easeOut" as const }}
+src/app/vergleich/page.tsx:215:          transition={{ duration: getDuration(0.5), ease: "easeOut" as const }}
+src/app/vergleich/page.tsx:230:          transition={{ duration: getDuration(0.5), delay: 0.15, ease: "easeOut" as const }}
+src/app/vergleich/page.tsx:249:                    transition={{ duration: getDuration(0.3), ease: [0.16, 1, 0.3, 1]  }}
+src/app/admin/fahrzeuge/[id]/page.tsx:36:    transition: { delay: i * 0.05, duration: 0.4, ease: 'easeOut' as const },
+src/app/admin/fahrzeuge/[id]/page.tsx:936:        transition={{ delay: 0.5, duration: getDuration(0.35), ease: 'easeOut' as const }}
+src/app/admin/fahrzeuge/page.tsx:25:    transition: { duration: 0.4, ease: 'easeOut' as const },
+src/app/admin/anfragen/page.tsx:13:    transition: { duration: 0.4, ease: 'easeOut' as const },
+src/app/admin/page.tsx:24:    transition: prefersReducedMotion ? { duration: 0 } : { delay: i * 0.06, duration: 0.45, ease: 'easeOut' as const },
+src/app/service/page.tsx:100:      transition: { duration: getDuration(0.6), ease: [0.16, 1, 0.3, 1] as const },
+src/app/service/page.tsx:106:    visible: { transition: { staggerChildren: 0.08 } },
+src/app/service/page.tsx:132:            transition={{ duration: getDuration(0.5), ease: "easeOut" as const }}
+src/app/service/page.tsx:141:            transition={{ duration: getDuration(0.6), delay: 0.1, ease: [0.16, 1, 0.3, 1] as const }}
+src/app/service/page.tsx:182:            transition={{ duration: getDuration(0.6), ease: [0.16, 1, 0.3, 1] as const }}
+src/app/service/page.tsx:226:          transition={{ duration: getDuration(0.7) }}
+src/app/service/page.tsx:260:            transition={{ duration: getDuration(0.6), ease: [0.16, 1, 0.3, 1] as const }}
+src/app/service/page.tsx:271:            transition={{ duration: getDuration(0.6), delay: 0.1, ease: [0.16, 1, 0.3, 1] as const }}
+src/app/service/page.tsx:388:            transition={{ duration: getDuration(0.6), ease: [0.16, 1, 0.3, 1] as const }}
+src/app/probefahrt/page.tsx:110:          transition={{ duration: getDuration(0.5), ease: "easeOut" as const }}
+src/app/probefahrt/page.tsx:161:                  transition={{ duration: getDuration(0.3), ease: [0.16, 1, 0.3, 1]  }}
+src/app/probefahrt/page.tsx:375:                        transition={{ type: "spring", stiffness: 200, damping: 20, duration: getDuration(0.5) }}
+src/app/tokens/primitive.css:132:    animation-duration: 0.01ms !important;
+src/app/tokens/primitive.css:133:    animation-delay: 0.01ms !important;
+src/app/tokens/primitive.css:135:    transition-duration: 0.01ms !important;
+src/app/tokens/primitive.css:136:    transition-delay: 0.01ms !important;
+src/app/globals.css:1628:    animation-duration: 0.01ms !important;
+src/app/globals.css:1629:    animation-delay: 0.01ms !important;
+src/app/globals.css:1631:    transition-duration: 0.01ms !important;
+src/app/globals.css:1632:    transition-delay: 0.01ms !important;
+src/app/template.tsx:20:  duration: 0.4,
+src/app/template.tsx:25:  duration: 0.01,
+src/app/template.tsx:38:        transition={{ duration: getDuration(0.4), ease: [0.42, 0, 0.58, 1] }}
+src/components/sections/hero.tsx:65:            delay: getDelay(i * STAGGER_DELAY),
+src/components/sections/hero.tsx:82:          delay: getDelay(words.length * STAGGER_DELAY),
+src/components/sections/hero.tsx:141:              transition: { staggerChildren: getDuration(0.12), delayChildren: getDelay(0.3) },
+src/components/sections/buying-card.tsx:87:        duration: getDuration(0.5),
+src/components/sections/buying-card.tsx:165:            transition={{ duration: getDuration(0.3), ease: 'easeOut' as const }}
+src/components/sections/magazine-gallery.tsx:145:      transition: { duration: getDuration(0.24), ease: 'easeOut' as const },
+src/components/sections/magazine-gallery.tsx:149:      transition: { duration: getDuration(0.18), ease: 'easeIn' as const },
+src/components/sections/filter-sidebar.tsx:67:          transition={{ duration: getDuration(0.2) }}
+src/components/sections/filter-sidebar.tsx:79:            transition={{ duration: getDuration(0.2) }}
+src/components/sections/filter-sidebar.tsx:315:            transition={{ duration: getDuration(0.2) }}
+src/components/sections/filter-sidebar.tsx:324:            transition={{ duration: getDuration(0.35), ease: [0.16, 1, 0.3, 1] as const }}
+src/components/sections/vehicle-card.tsx:72:        delay: getDelay(i * 0.06),
+src/components/sections/vehicle-card.tsx:73:        duration: getDuration(0.5),
+src/components/sections/site-header.tsx:545:              transition={{ duration: getDuration(0.18), ease: "easeOut" as const }}
+src/components/sections/site-header.tsx:639:              transition={{ duration: getDuration(0.2) }}
+src/components/sections/site-header.tsx:722:                              transition={{ duration: getDuration(0.2), ease: "easeInOut" as const }}
+src/components/sections/detailed-timeline.tsx:51:      transition: { staggerChildren: getDuration(0.1) },
+src/components/sections/detailed-timeline.tsx:61:        duration: getDuration(0.45),
+src/components/sections/feature-grid.tsx:61:        staggerChildren: getDuration(0.08),
+src/components/sections/feature-grid.tsx:72:        duration: getDuration(0.5),
+src/components/sections/feature-grid.tsx:120:                  duration: getDuration(0.8),
+src/components/sections/feature-grid.tsx:122:                  delay: getDelay(0.2),
+src/components/sections/quick-search.tsx:130:      transition={{ duration: getDuration(0.7), ease: [0.16, 1, 0.3, 1] }}
+src/lib/motion.ts:7:    getDuration: (duration: number) => prefersReducedMotion ? 0.01 : duration,
+src/lib/motion.ts:8:    getDelay: (delay: number) => prefersReducedMotion ? 0 : delay,

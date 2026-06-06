@@ -1,0 +1,5 @@
+src/app/konto/page.tsx:                        <div className="absolute -left-[5px] top-1.5 w-[var(--space-2)] h-[var(--space-2)] rounded-full bg-border" />
+src/app/angebote/page.tsx:      <section className="border-y border-border bg-card sticky top-[57px] z-30">
+src/app/fahrzeuge/page.tsx:      <section className="border-b border-border bg-card/60 backdrop-blur-sm sticky top-[65px] z-30">
+src/app/admin/fahrzeuge/[id]/page.tsx:        className="fixed bottom-0 left-[260px] right-0 z-20"
+src/app/admin/anfragen/page.tsx:          className="flex items-center justify-center size-20 rounded-[20px] bg-red-900/10 text-primary"

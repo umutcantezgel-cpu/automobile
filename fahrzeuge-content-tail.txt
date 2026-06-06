@@ -1,0 +1,279 @@
+        });
+    }
+  }, [vehicles, sortKey]);
+
+  const totalPages = Math.ceil(sorted.length / ITEMS_PER_PAGE);
+  const paginated = sorted.slice(
+    (currentPage - 1) * ITEMS_PER_PAGE,
+    currentPage * ITEMS_PER_PAGE
+  );
+
+  return (
+    <div className="container-x py-8">
+      {/* Breadcrumb */}
+      <nav aria-label="Breadcrumb" className="mb-6">
+        <ol className="flex items-center gap-1.5 text-sm text-muted-foreground">
+          <li>
+            <Link
+              href="/"
+              className="hover:text-foreground transition-colors"
+            >
+              Apex Motors
+            </Link>
+          </li>
+          <li>
+            <ChevronRight size={14} className="opacity-50" />
+          </li>
+          <li>
+            <span className="text-foreground font-medium">Fahrzeuge</span>
+          </li>
+        </ol>
+      </nav>
+
+      {/* Page header */}
+      <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-8">
+        <div>
+          <p className="eyebrow mb-2">Fahrzeugbestand</p>
+          <h1 className="text-h1">
+            {categoryLabel}
+            <span className="text-muted-foreground font-normal text-[length:var(--t-xs)] ml-3 font-mono tabular-nums">
+              ({sorted.length})
+            </span>
+          </h1>
+        </div>
+
+        {/* Controls */}
+        <div className="flex items-center gap-3">
+          {/* Mobile filter toggle */}
+          <button
+            type="button"
+            onClick={() => setMobileFilterOpen(true)}
+            className="btn btn-outline btn-sm lg:hidden"
+          >
+            <SlidersHorizontal size={16} />
+            Filter
+          </button>
+
+          {/* Sort dropdown */}
+          <div className="relative">
+            <div className="flex items-center gap-2">
+              <ArrowUpDown size={14} className="text-muted-foreground" />
+              <select
+                value={sortKey}
+                onChange={(e) => {
+                  setSortKey(e.target.value as SortKey);
+                  setCurrentPage(1);
+                }}
+                className="select-field !h-9 !w-auto !pr-8 text-sm"
+              >
+                {SORT_OPTIONS.map((opt) => (
+                  <option key={opt.value} value={opt.value}>
+                    {opt.label}
+                  </option>
+                ))}
+              </select>
+            </div>
+          </div>
+
+          {/* View toggle */}
+          <div className="flex items-center gap-0.5 p-1 bg-muted rounded-lg border border-border">
+            {([
+              { mode: 'grid' as const, icon: LayoutGrid, label: 'Rasteransicht' },
+              { mode: 'list' as const, icon: List, label: 'Listenansicht' },
+              { mode: 'map' as const, icon: Map, label: 'Kartenansicht' },
+            ] as const).map(({ mode, icon: Icon, label }) => (
+              <button
+                key={mode}
+                type="button"
+                onClick={() => setViewMode(mode)}
+                className={cn(
+                  'w-9 h-9 flex items-center justify-center rounded-md transition-all duration-150',
+                  'min-w-[var(--space-10)] min-h-[var(--space-10)]',
+                  viewMode === mode
+                    ? 'bg-foreground text-background shadow-sm'
+                    : 'text-muted-foreground hover:text-foreground'
+                )}
+                aria-label={label}
+                title={label}
+              >
+                <Icon size={16} />
+              </button>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      {/* Main layout: sidebar + content */}
+      <div className="flex gap-8">
+        {/* Desktop sidebar */}
+        <div className="hidden lg:block w-[var(--layout-sidebar-sm)] shrink-0">
+          <FilterSidebar filters={filters} onChange={handleFilterChange} totalResults={sorted.length} />
+        </div>
+
+        {/* Mobile filter overlay */}
+        <AnimatePresence>
+          {mobileFilterOpen && (
+            <>
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                className="fixed inset-0 z-40 bg-foreground/40 backdrop-blur-sm lg:hidden"
+                onClick={() => setMobileFilterOpen(false)}
+              />
+              <motion.div
+                initial={{ x: '-100%' }}
+                animate={{ x: 0 }}
+                exit={{ x: '-100%' }}
+                transition={{ type: 'spring', damping: 30, stiffness: 300 }}
+                className="fixed inset-y-0 left-0 z-50 w-[var(--layout-sidebar-sm)] max-w-[85vw] bg-card shadow-modal lg:hidden overflow-y-auto"
+              >
+                <div className="flex items-center justify-between p-4 border-b border-border">
+                  <span className="font-semibold font-display">Filter</span>
+                  <button
+                    type="button"
+                    onClick={() => setMobileFilterOpen(false)}
+                    className="btn-icon-sm flex items-center justify-center min-w-[var(--space-10)] min-h-[var(--space-10)]"
+                    aria-label="Filter schließen"
+                  >
+                    <X size={18} />
+                  </button>
+                </div>
+                <div className="p-4">
+                  <FilterSidebar filters={filters} onChange={handleFilterChange} totalResults={sorted.length} className="!sticky !top-0 !border-0 !shadow-none !bg-transparent !backdrop-blur-none" />
+                </div>
+              </motion.div>
+            </>
+          )}
+        </AnimatePresence>
+
+        {/* Content area */}
+        <div className="flex-1 min-w-0">
+          {viewMode === 'map' ? (
+            <div className="space-y-6">
+              <MapView vehicles={sorted} />
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                {paginated.map((vehicle, i) => (
+                  <VehicleCard
+                    key={vehicle.id}
+                    vehicle={vehicle}
+                    index={i}
+                    variant="grid"
+                  />
+                ))}
+              </div>
+            </div>
+          ) : viewMode === 'list' ? (
+            <div className="space-y-4">
+              {paginated.map((vehicle, i) => (
+                <VehicleCard
+                  key={vehicle.id}
+                  vehicle={vehicle}
+                  index={i}
+                  variant="list"
+                />
+              ))}
+            </div>
+          ) : (
+            <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-5">
+              {paginated.map((vehicle, i) => (
+                <VehicleCard
+                  key={vehicle.id}
+                  vehicle={vehicle}
+                  index={i}
+                  variant="grid"
+                />
+              ))}
+            </div>
+          )}
+
+          {/* Empty state */}
+          {sorted.length === 0 && (
+            <div className="flex flex-col items-center justify-center py-20 text-center">
+              <p className="text-h3 font-display mb-2">
+                Keine Fahrzeuge gefunden
+              </p>
+              <p className="text-muted-foreground max-w-md">
+                Versuchen Sie andere Filtereinstellungen oder schauen Sie sich
+                unser gesamtes Angebot an.
+              </p>
+              <Link href="/fahrzeuge" className="btn btn-primary mt-6">
+                Alle Fahrzeuge
+              </Link>
+            </div>
+          )}
+
+          {/* Pagination */}
+          {totalPages > 1 && (
+            <nav
+              aria-label="Seitennavigation"
+              className="flex items-center justify-center gap-2 mt-12"
+            >
+              <button
+                type="button"
+                onClick={() => setCurrentPage((p) => Math.max(1, p - 1))}
+                disabled={currentPage === 1}
+                className={cn(
+                  'btn btn-outline btn-sm min-w-[var(--space-10)] min-h-[var(--space-10)]',
+                  currentPage === 1 && 'opacity-40 pointer-events-none'
+                )}
+              >
+                Zurück
+              </button>
+
+              {Array.from({ length: totalPages }, (_, i) => i + 1).map(
+                (page) => (
+                  <button
+                    key={page}
+                    type="button"
+                    onClick={() => setCurrentPage(page)}
+                    className={cn(
+                      'w-10 h-10 flex items-center justify-center rounded-lg text-sm font-medium transition-all',
+                      'min-w-[var(--space-10)] min-h-[var(--space-10)]',
+                      page === currentPage
+                        ? 'bg-foreground text-background'
+                        : 'text-muted-foreground hover:bg-muted hover:text-foreground'
+                    )}
+                    aria-current={page === currentPage ? 'page' : undefined}
+                  >
+                    <span className="font-mono tabular-nums">{page}</span>
+                  </button>
+                )
+              )}
+
+              <button
+                type="button"
+                onClick={() =>
+                  setCurrentPage((p) => Math.min(totalPages, p + 1))
+                }
+                disabled={currentPage === totalPages}
+                className={cn(
+                  'btn btn-outline btn-sm min-w-[var(--space-10)] min-h-[var(--space-10)]',
+                  currentPage === totalPages &&
+                    'opacity-40 pointer-events-none'
+                )}
+              >
+                Weiter
+              </button>
+            </nav>
+          )}
+
+          {/* Results summary */}
+          <p className="text-center text-sm text-muted-foreground mt-6">
+            Zeige{' '}
+            <span className="font-mono tabular-nums">
+              {(currentPage - 1) * ITEMS_PER_PAGE + 1}
+            </span>
+            –
+            <span className="font-mono tabular-nums">
+              {Math.min(currentPage * ITEMS_PER_PAGE, sorted.length)}
+            </span>{' '}
+            von{' '}
+            <span className="font-mono tabular-nums">{sorted.length}</span>{' '}
+            Fahrzeugen
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+}

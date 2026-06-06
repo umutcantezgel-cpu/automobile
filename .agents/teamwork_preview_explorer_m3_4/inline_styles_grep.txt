@@ -1,0 +1,8 @@
+src/app/calculator/page.tsx:          style={{ minHeight: '44px' }}
+src/app/calculator/page.tsx:                      style={{ minHeight: '44px' }}
+src/app/admin/fahrzeuge/[id]/page.tsx:              <Eye size={15} style={{ color: 'var(--color-premium)' }} />
+src/app/admin/fahrzeuge/[id]/page.tsx:              <TrendingUp size={15} style={{ color: 'var(--color-premium)' }} />
+src/app/admin/fahrzeuge/[id]/page.tsx:              <MessageSquare size={15} style={{ color: 'var(--color-premium)' }} />
+src/app/admin/fahrzeuge/[id]/page.tsx:                  <Crown size={16} style={{ color: 'var(--color-premium)' }} />
+src/app/admin/fahrzeuge/page.tsx:                          style={{ color: 'var(--color-premium)' }}
+src/app/admin/page.tsx:                            style={{ color: 'var(--color-premium)' }}

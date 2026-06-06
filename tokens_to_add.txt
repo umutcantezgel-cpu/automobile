@@ -1,0 +1,2 @@
+  --auto-1000: hsl(var(--foreground));
+  --auto-1001: 10px;

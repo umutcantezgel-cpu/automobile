@@ -1,0 +1,174 @@
+@import "./tokens/primitive.css";
+@import "./tokens/semantic.css";
+@import "./tokens/media.css";
+@import "./tokens/breakpoints.module.css";
+
+/* Core Layout & Typography Resets */
+:root {
+  --background: var(--surface-default);
+  --foreground: var(--text-default);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-body);
+}
+
+/* Base Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+}
+
+/* Layout Shells */
+.shell-container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 var(--space-6);
+}
+
+@media (min-width: 768px) {
+  .shell-container {
+    padding: 0 var(--space-12);
+  }
+}
+
+.shell-section {
+  padding: var(--space-24) 0;
+}
+
+@media (min-width: 768px) {
+  .shell-section {
+    padding: var(--space-32) 0;
+  }
+}
+
+/* Utilities */
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: var(--t-xs);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-primary);
+}
+
+.text-display {
+  font-family: var(--font-display);
+  font-size: var(--t-4xl);
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  line-height: 1.1;
+}
+
+@media (min-width: 768px) {
+  .text-display {
+    font-size: var(--t-6xl);
+  }
+}
+
+/* Cards */
+.card {
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--border-default);
+  background-color: var(--surface-default);
+  box-shadow: var(--shadow-2);
+}
+
+.card-hoverable {
+  transition: transform var(--duration-350) cubic-bezier(0.16, 1, 0.3, 1), box-shadow var(--duration-350) cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.card-hoverable:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-3);
+}
+
+/* Hero Shell */
+.hero-shell {
+  position: relative;
+  width: 100%;
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: var(--space-16);
+  background-color: var(--surface-default);
+  overflow: hidden;
+}
+
+.hero-img-bg {
+  position: absolute;
+  inset: 0;
+  background-image: url('/images/hero-bg.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-img-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.2) 100%);
+}
+
+.hero-vehicle {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-full);
+  font-weight: 500;
+  transition: all var(--duration-200);
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: var(--action-primary-bg);
+  color: var(--action-primary-text);
+}
+
+.btn-primary:hover {
+  background-color: var(--action-primary-hover);
+}
+
+.btn-ghost {
+  background-color: transparent;
+  color: var(--foreground);
+}
+
+.btn-ghost:hover {
+  background-color: var(--surface-raised);
+}
+
+.btn-lg {
+  padding: var(--space-4) var(--space-8);
+  font-size: var(--t-base);
+}
+
+/* Typography Utils */
+.text-primary {
+  color: var(--text-primary);
+}
+
+.bg-card-elevated {
+  background-color: var(--surface-raised);
+}

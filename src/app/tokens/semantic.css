@@ -1,0 +1,47 @@
+@import './primitive.css';
+
+:root {
+  /* Surfaces */
+  --surface-default: var(--color-off-white-100);
+  --surface-raised: var(--color-off-white-50);
+  --surface-overlay: var(--color-off-white-50);
+  --surface-sunken: var(--color-off-white-200);
+
+  /* Text */
+  --text-default: var(--color-off-white-950);
+  --text-muted: var(--color-off-white-700);
+  --text-inverse: var(--color-off-white-50);
+  --text-accent: var(--color-gold-600);
+  --text-primary: var(--color-red-600);
+
+  /* Borders */
+  --border-default: var(--color-off-white-300);
+  --border-subtle: var(--color-off-white-200);
+  --border-focus: var(--color-gold-600);
+  --border-destructive: var(--color-red-600);
+
+  /* Interaction */
+  --action-primary-bg: var(--color-red-600);
+  --action-primary-hover: var(--color-red-700);
+  --action-primary-active: var(--color-red-800);
+  --action-primary-text: var(--color-off-white-50);
+
+  --action-secondary-bg: var(--color-off-white-200);
+  --action-secondary-hover: var(--color-off-white-300);
+  --action-secondary-active: var(--color-off-white-400);
+  --action-secondary-text: var(--color-off-white-950);
+
+  /* Status */
+  --status-success: var(--color-green-600);
+  --status-warning: var(--color-orange-600);
+  --status-info: var(--color-blue-600);
+  --status-error: var(--color-red-600);
+}
+
+@media (prefers-contrast: more) {
+  :root {
+    --border-default: var(--color-off-white-900);
+    --border-subtle: var(--color-off-white-900);
+    --text-muted: var(--color-off-white-950);
+  }
+}

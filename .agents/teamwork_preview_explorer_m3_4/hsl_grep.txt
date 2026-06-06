@@ -1,0 +1,155 @@
+src/app/calculator/page.tsx:  { id: 'load', label: 'Ladezeit', icon: <Clock className="w-4 h-4" />, color: 'hsl(0, 72%, 42%)', strokeColor: 'hsl(0, 72%, 42%)' },
+src/app/calculator/page.tsx:  { id: 'mobile', label: 'Mobil', icon: <Smartphone className="w-4 h-4" />, color: 'hsl(14, 70%, 48%)', strokeColor: 'hsl(14, 70%, 48%)' },
+src/app/calculator/page.tsx:  { id: 'seo', label: 'SEO', icon: <Search className="w-4 h-4" />, color: 'hsl(38, 55%, 48%)', strokeColor: 'hsl(38, 55%, 48%)' },
+src/app/calculator/page.tsx:  { id: 'trust', label: 'Vertrauen', icon: <ShieldCheck className="w-4 h-4" />, color: 'hsl(217, 70%, 50%)', strokeColor: 'hsl(217, 70%, 50%)' },
+src/app/calculator/page.tsx:        <circle cx="100" cy="100" r={radius} fill="none" stroke="hsl(30, 20%, 93%)" strokeWidth="24" />
+src/app/calculator/page.tsx:        <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_50%_at_50%_-20%,hsl(0_72%_42%_/_0.06),transparent)]" />
+src/app/kontakt/page.tsx:                  'linear-gradient(hsl(0 0% 100% / 0.06) 1px, transparent 1px), linear-gradient(90deg, hsl(0 0% 100% / 0.06) 1px, transparent 1px)',
+src/app/kontakt/page.tsx:              <div className="w-5 h-5 rounded-full bg-primary shadow-[0_0_20px_hsl(0_72%_42%/0.5)]" />
+src/app/kontakt/page.tsx:            <div className="absolute inset-0 bg-[radial-gradient(50%_50%_at_50%_50%,hsl(0_72%_42%/0.08),transparent)]" />
+src/app/preise/page.tsx:        <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_50%_at_50%_-20%,hsl(0_72%_42%_/_0.06),transparent)]" />
+src/app/finanzierung/page.tsx:    { label: 'Anzahlung', value: anzahlung, color: 'hsl(var(--color-muted-foreground))' },
+src/app/finanzierung/page.tsx:    { label: 'Raten', value: results.monthly * laufzeit, color: 'hsl(var(--color-primary))' },
+src/app/finanzierung/page.tsx:    { label: 'Schlussrate', value: schlussrate, color: 'hsl(var(--color-accent))' },
+src/app/fahrzeuge/page.tsx:        <div className="absolute inset-0 bg-[radial-gradient(70%_70%_at_80%_20%,hsl(354,70%,96%)_0%,transparent_60%),radial-gradient(60%_60%_at_20%_90%,hsl(240,10%,95%)_0%,transparent_60%)]" />
+src/app/admin/fahrzeuge/[id]/page.tsx:  { key: 'sehr-gut', label: 'Sehr guter Preis', desc: 'Unter Marktwert', color: 'var(--color-success)', accent: 'hsl(142 60% 36% / 0.1)' },
+src/app/admin/fahrzeuge/[id]/page.tsx:  { key: 'gut', label: 'Guter Preis', desc: 'Leicht unter Markt', color: 'var(--color-success)', accent: 'hsl(142 60% 36% / 0.08)' },
+src/app/admin/fahrzeuge/[id]/page.tsx:  { key: 'fair', label: 'Fairer Preis', desc: 'Marktkonform', color: 'var(--color-warning)', accent: 'hsl(32 90% 44% / 0.08)' },
+src/app/admin/fahrzeuge/[id]/page.tsx:                borderColor: 'hsl(38 55% 42% / 0.3)',
+src/app/admin/fahrzeuge/[id]/page.tsx:          background: 'hsl(0 0% 100% / 0.92)',
+src/app/admin/fahrzeuge/[id]/page.tsx:            background: 'hsl(0 72% 42% / 0.08)',
+src/app/admin/fahrzeuge/[id]/page.tsx:          (e.currentTarget as HTMLDivElement).style.background = 'hsl(0 72% 42% / 0.03)';
+src/app/admin/fahrzeuge/page.tsx:    bg: 'hsl(142 60% 36% / 0.12)',
+src/app/admin/fahrzeuge/page.tsx:    bg: 'hsl(32 90% 44% / 0.12)',
+src/app/admin/page.tsx:    bg: 'hsl(142 60% 36% / 0.12)',
+src/app/admin/page.tsx:    bg: 'hsl(32 90% 44% / 0.12)',
+src/app/admin/page.tsx:  { initials: 'MH', name: 'Markus Hoffmann', vehicle: 'Anfrage zu Audi RS6 Avant', time: 'Vor 12 Min.', color: 'hsl(217 80% 48%)' },
+src/app/admin/page.tsx:  { initials: 'SR', name: 'Dr. Sebastian Renz', vehicle: 'Anfrage zu Porsche 911 GT3', time: 'Vor 34 Min.', color: 'hsl(142 60% 36%)' },
+src/app/admin/page.tsx:  { initials: 'CB', name: 'Christine Bauer', vehicle: 'Anfrage zu BMW M3 Competition', time: 'Vor 1 Std.', color: 'hsl(32 90% 44%)' },
+src/app/admin/page.tsx:  { initials: 'TW', name: 'Thomas Weber', vehicle: 'Anfrage zu Mercedes G 63 AMG', time: 'Vor 2 Std.', color: 'hsl(0 72% 42%)' },
+src/app/tokens/primitive.css:  --color-off-white-50: hsl(30, 25%, 98%);
+src/app/tokens/primitive.css:  --color-off-white-100: hsl(30, 25%, 97%);
+src/app/tokens/primitive.css:  --color-off-white-200: hsl(30, 25%, 92%);
+src/app/tokens/primitive.css:  --color-off-white-300: hsl(30, 25%, 85%);
+src/app/tokens/primitive.css:  --color-off-white-400: hsl(30, 25%, 75%);
+src/app/tokens/primitive.css:  --color-off-white-500: hsl(30, 25%, 65%);
+src/app/tokens/primitive.css:  --color-off-white-600: hsl(30, 25%, 50%);
+src/app/tokens/primitive.css:  --color-off-white-700: hsl(30, 25%, 40%);
+src/app/tokens/primitive.css:  --color-off-white-800: hsl(30, 25%, 25%);
+src/app/tokens/primitive.css:  --color-off-white-900: hsl(30, 25%, 15%);
+src/app/tokens/primitive.css:  --color-off-white-950: hsl(30, 25%, 10%);
+src/app/tokens/primitive.css:  --color-red-50: hsl(0, 72%, 95%);
+src/app/tokens/primitive.css:  --color-red-100: hsl(0, 72%, 90%);
+src/app/tokens/primitive.css:  --color-red-200: hsl(0, 72%, 80%);
+src/app/tokens/primitive.css:  --color-red-300: hsl(0, 72%, 70%);
+src/app/tokens/primitive.css:  --color-red-400: hsl(0, 72%, 60%);
+src/app/tokens/primitive.css:  --color-red-500: hsl(0, 72%, 50%);
+src/app/tokens/primitive.css:  --color-red-600: hsl(0, 72%, 42%);
+src/app/tokens/primitive.css:  --color-red-700: hsl(0, 72%, 35%);
+src/app/tokens/primitive.css:  --color-red-800: hsl(0, 72%, 25%);
+src/app/tokens/primitive.css:  --color-red-900: hsl(0, 72%, 15%);
+src/app/tokens/primitive.css:  --color-red-950: hsl(0, 72%, 10%);
+src/app/tokens/primitive.css:  --color-gold-50: hsl(38, 55%, 95%);
+src/app/tokens/primitive.css:  --color-gold-100: hsl(38, 55%, 90%);
+src/app/tokens/primitive.css:  --color-gold-200: hsl(38, 55%, 80%);
+src/app/tokens/primitive.css:  --color-gold-300: hsl(38, 55%, 70%);
+src/app/tokens/primitive.css:  --color-gold-400: hsl(38, 55%, 60%);
+src/app/tokens/primitive.css:  --color-gold-500: hsl(38, 55%, 50%);
+src/app/tokens/primitive.css:  --color-gold-600: hsl(38, 55%, 42%);
+src/app/tokens/primitive.css:  --color-gold-700: hsl(38, 55%, 35%);
+src/app/tokens/primitive.css:  --color-gold-800: hsl(38, 55%, 25%);
+src/app/tokens/primitive.css:  --color-gold-900: hsl(38, 55%, 15%);
+src/app/tokens/primitive.css:  --color-gold-950: hsl(38, 55%, 10%);
+src/app/tokens/primitive.css:  --color-green-600: hsl(142, 60%, 36%);
+src/app/tokens/primitive.css:  --color-orange-600: hsl(32, 90%, 44%);
+src/app/tokens/primitive.css:  --color-blue-600: hsl(217, 80%, 48%);
+src/app/globals.css:  background: hsl(0 72% 42% / 0.15);
+src/app/globals.css:    background: hsl(0 0% 100% / 0.55);
+src/app/globals.css:    border: 1px solid hsl(20 8% 86% / 0.7);
+src/app/globals.css:    background: hsl(0 72% 42% / 0.9);
+src/app/globals.css:    border-color: hsl(38 55% 42% / 0.45);
+src/app/globals.css:      0 1px 2px hsl(40 30% 30% / 0.08),
+src/app/globals.css:      0 0 0 1px hsl(38 55% 42% / 0.18),
+src/app/globals.css:      0 14px 28px -10px hsl(38 55% 42% / 0.18);
+src/app/globals.css:      0 1px 2px hsl(40 30% 30% / 0.08),
+src/app/globals.css:      0 0 0 1px hsl(38 55% 42% / 0.42),
+src/app/globals.css:      0 22px 42px -14px hsl(38 55% 42% / 0.28);
+src/app/globals.css:      hsl(38 55% 42% / 0.06) 0%,
+src/app/globals.css:      hsl(38 55% 42% / 0.04) 100%);
+src/app/globals.css:      linear-gradient(135deg, hsl(38 55% 42% / 0.18), transparent 40%, transparent 60%, hsl(38 55% 42% / 0.12)) border-box;
+src/app/globals.css:    box-shadow: inset 0 0 0 1px hsl(38 55% 42% / 0.5);
+src/app/globals.css:    color: hsl(38 32% 18%);
+src/app/globals.css:    background: linear-gradient(135deg, hsl(40 70% 78%) 0%, hsl(38 55% 62%) 60%, hsl(38 48% 54%) 100%);
+src/app/globals.css:      inset 0 1px 0 hsl(40 80% 88% / 0.7),
+src/app/globals.css:      inset 0 -1px 0 hsl(38 50% 40% / 0.4),
+src/app/globals.css:      0 2px 6px hsl(38 60% 30% / 0.25);
+src/app/globals.css:    box-shadow: 0 0 0 3px hsl(0 72% 42% / 0.18);
+src/app/globals.css:    background: hsl(0 72% 42% / 0.15);
+src/app/globals.css:    border-color: hsl(0 72% 42% / 0.3);
+src/app/globals.css:    background: hsl(38 55% 42% / 0.12);
+src/app/globals.css:    border-color: hsl(38 55% 42% / 0.4);
+src/app/globals.css:    background: hsl(142 60% 36% / 0.15);
+src/app/globals.css:    border-color: hsl(142 60% 36% / 0.3);
+src/app/globals.css:    background: hsl(32 90% 44% / 0.15);
+src/app/globals.css:    border-color: hsl(32 90% 44% / 0.3);
+src/app/globals.css:    background: hsl(0 72% 42% / 0.15);
+src/app/globals.css:    border-color: hsl(0 72% 42% / 0.3);
+src/app/globals.css:    background: hsl(12 60% 38% / 0.12);
+src/app/globals.css:    border-color: hsl(12 60% 38% / 0.3);
+src/app/globals.css:    background: linear-gradient(180deg, hsl(0 0% 100% / 0.04) 0%, hsl(0 0% 0% / 0.5) 100%);
+src/app/globals.css:    background: linear-gradient(180deg, hsl(0 0% 100% / 0.06), hsl(0 0% 100% / 0.01));
+src/app/globals.css:    background: radial-gradient(50% 100% at 50% 0%, hsl(0 72% 42% / 0.15) 0%, transparent 70%);
+src/app/globals.css:      linear-gradient(hsl(0 0% 100% / 0.025) 1px, transparent 1px),
+src/app/globals.css:      linear-gradient(90deg, hsl(0 0% 100% / 0.025) 1px, transparent 1px);
+src/app/globals.css:      radial-gradient(70% 70% at 80% 20%, hsl(354 70% 96%) 0%, transparent 60%),
+src/app/globals.css:      radial-gradient(60% 60% at 20% 90%, hsl(240 10% 95%) 0%, transparent 60%),
+src/app/globals.css:      linear-gradient(180deg, hsl(30 25% 97% / 0) 0%, hsl(30 25% 97% / 0.2) 60%, hsl(30 25% 97%) 100%);
+src/app/globals.css:    background: radial-gradient(60% 100% at 50% 50%, hsl(0 0% 0% / 0.7) 0%, transparent 70%);
+src/app/globals.css:    background: linear-gradient(135deg, hsl(220 30% 28%) 0%, hsl(220 25% 16%) 50%, hsl(220 20% 8%) 100%);
+src/app/globals.css:    box-shadow: 0 60px 120px -40px hsl(0 72% 42% / 0.35), inset 0 -2px 6px hsl(0 0% 100% / 0.1);
+src/app/globals.css:    background: hsl(30 25% 97% / 0.78);
+src/app/globals.css:    background: hsl(30 25% 97% / 0.92);
+src/app/globals.css:    background: linear-gradient(135deg, hsl(0 72% 42% / 0.92), hsl(12 60% 38% / 0.92));
+src/app/globals.css:    text-shadow: 0 1px 0 hsl(0 0% 0% / 0.15);
+src/app/globals.css:  .meter-zone.z-good { width: 38%; background: linear-gradient(90deg, hsl(142 55% 80%), hsl(142 50% 70%)); }
+src/app/globals.css:  .meter-zone.z-fair { width: 30%; background: linear-gradient(90deg, hsl(142 50% 70%), hsl(38 65% 72%)); }
+src/app/globals.css:  .meter-zone.z-high { width: 32%; background: linear-gradient(90deg, hsl(38 65% 72%), hsl(0 60% 70%)); }
+src/app/globals.css:    box-shadow: 0 2px 8px hsl(0 0% 0% / 0.18), 0 0 0 1px var(--color-border);
+src/app/globals.css:    box-shadow: 0 4px 14px hsl(0 0% 0% / 0.18);
+src/app/globals.css:  .ph-bar-good { background: hsl(142 45% 70%); }
+src/app/globals.css:  .ph-bar-fair { background: hsl(35 55% 72%); }
+src/app/globals.css:  .ph-bar-high { background: hsl(0 50% 76%); }
+src/app/globals.css:    box-shadow: 0 0 0 2px hsl(0 72% 42% / 0.25);
+src/app/globals.css:    background: hsl(0 72% 42% / 0.1);
+src/app/globals.css:    box-shadow: 0 2px 8px hsl(0 72% 42% / 0.2);
+src/app/globals.css:    background: hsl(0 72% 42% / 0.08);
+src/app/globals.css:    box-shadow: inset 0 0 0 1px hsl(0 72% 42% / 0.4);
+src/app/globals.css:    background: linear-gradient(180deg, transparent 60%, hsl(0 0% 0% / 0.45) 100%);
+src/app/globals.css:    text-shadow: 0 1px 4px hsl(0 0% 0% / 0.3);
+src/app/globals.css:    background: hsl(0 0% 0% / 0.45);
+src/app/globals.css:    background: hsl(30 25% 97% / 0.7);
+src/app/globals.css:    border: 1px solid hsl(20 8% 86% / 0.6);
+src/app/globals.css:    box-shadow: 0 8px 24px hsl(0 0% 0% / 0.18);
+src/app/globals.css:    background: hsl(0 0% 100% / 0.18);
+src/app/globals.css:    background: hsl(0 0% 4% / 0.92);
+src/app/globals.css:    background: hsl(0 0% 100% / 0.1);
+src/app/globals.css:    border: 1px solid hsl(0 0% 100% / 0.18);
+src/app/globals.css:    background: hsl(0 0% 100% / 0.08);
+src/app/globals.css:    border: 1px solid hsl(0 0% 100% / 0.15);
+src/app/globals.css:  .lightbox-nav:hover { background: hsl(0 0% 100% / 0.15); }
+src/app/globals.css:    box-shadow: 0 30px 80px hsl(0 0% 0% / 0.5);
+src/app/globals.css:    background: hsl(0 72% 42% / 0.1);
+src/app/globals.css:    background: hsl(0 0% 100% / 0.18);
+src/app/globals.css:    background: hsl(0 72% 42% / 0.08);
+src/app/globals.css:  .adm-table tbody tr:hover { background: hsl(30 14% 92% / 0.5); }
+src/app/globals.css:    box-shadow: 0 1px 3px hsl(0 0% 0% / 0.04);
+src/app/globals.css:    box-shadow: 0 2px 6px hsl(0 0% 0% / 0.2), 0 0 0 0.5px hsl(0 0% 0% / 0.06);
+src/app/globals.css:    border-color: hsl(38 55% 42% / 0.5);
+src/app/globals.css:    background: linear-gradient(135deg, var(--color-card) 0%, hsl(40 60% 97%) 100%);
+src/app/globals.css:      0 0 0 1px hsl(38 55% 42% / 0.18),
+src/app/globals.css:      0 14px 32px -8px hsl(38 55% 42% / 0.18);
+src/app/globals.css:    background: radial-gradient(circle at top right, hsl(38 55% 42% / 0.12), transparent 60%);
+src/app/globals.css:    background: linear-gradient(135deg, hsl(40 70% 78%) 0%, hsl(38 55% 56%) 100%);
+src/app/globals.css:    box-shadow: 0 4px 14px hsl(38 60% 40% / 0.3);
+src/app/globals.css:  background: hsl(20 8% 74%);
+src/app/globals.css:  background: hsl(20 8% 60%);

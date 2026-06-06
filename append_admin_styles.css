@@ -1,0 +1,6 @@
+.vehImgThumb { width: var(--space-20); height: var(--space-12); border-radius: var(--radius-lg); flex-shrink: 0; aspect-ratio: auto; }
+.vehImgTopRounded { border-top-left-radius: var(--radius-xl); border-top-right-radius: var(--radius-xl); }
+.text2xs { font-size: var(--t-2xs); }
+.textSm { font-size: var(--t-sm); }
+.fontMedium { font-weight: 500; }
+.overflowXAuto { overflow-x: auto; }

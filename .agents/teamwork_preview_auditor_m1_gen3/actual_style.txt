@@ -1,0 +1,122 @@
+src/app/calculator/page.tsx:144:          style={{ minHeight: '44px' }}
+src/app/calculator/page.tsx:149:            style={{ width: `${percentage}%` }}
+src/app/calculator/page.tsx:296:            style={{ maxHeight: '100%' }}
+src/app/calculator/page.tsx:599:                      style={{ minHeight: '44px' }}
+src/app/calculator/page.tsx:764:                            style={{ backgroundColor: seg.color }}
+src/app/inzahlungnahme/page.tsx:135:            style={{ width: `${((step - 1) / 5) * 100}%` }}
+src/app/kontakt/page.tsx:172:              style={{
+src/app/preise/page.tsx:1053:                style={{ transitionTimingFunction: 'cubic-bezier(0.16, 1, 0.3, 1)' }}
+src/app/preise/page.tsx:1324:                style={{ transitionTimingFunction: 'cubic-bezier(0.16, 1, 0.3, 1)' }}
+src/app/vergleich/page.tsx:233:              style={{
+src/app/vergleich/page.tsx:317:                    style={{
+src/app/admin/fahrzeuge/[id]/page.tsx:263:            <h3 className="text-[15px] font-semibold" style={{ fontFamily: 'var(--font-display)' }}>
+src/app/admin/fahrzeuge/[id]/page.tsx:271:            style={{ gridTemplateColumns: 'repeat(2, 1fr)' }}
+src/app/admin/fahrzeuge/[id]/page.tsx:275:              <label className="text-[12px] font-semibold uppercase tracking-wider" style={{ color: 'var(--color-muted-foreground)' }}>
+src/app/admin/fahrzeuge/[id]/page.tsx:292:              <label className="text-[12px] font-semibold uppercase tracking-wider" style={{ color: 'var(--color-muted-foreground)' }}>
+src/app/admin/fahrzeuge/[id]/page.tsx:306:              <label className="text-[12px] font-semibold uppercase tracking-wider" style={{ color: 'var(--color-muted-foreground)' }}>
+src/app/admin/fahrzeuge/[id]/page.tsx:320:              <label className="text-[12px] font-semibold uppercase tracking-wider" style={{ color: 'var(--color-muted-foreground)' }}>
+src/app/admin/fahrzeuge/[id]/page.tsx:334:              <label className="text-[12px] font-semibold uppercase tracking-wider" style={{ color: 'var(--color-muted-foreground)' }}>
+src/app/admin/fahrzeuge/[id]/page.tsx:348:              <label className="text-[12px] font-semibold uppercase tracking-wider" style={{ color: 'var(--color-muted-foreground)' }}>
+src/app/admin/fahrzeuge/[id]/page.tsx:362:                    style={{ color: 'var(--color-muted-foreground)' }}
+src/app/admin/fahrzeuge/[id]/page.tsx:372:              <label className="text-[12px] font-semibold uppercase tracking-wider" style={{ color: 'var(--color-muted-foreground)' }}>
+src/app/admin/fahrzeuge/[id]/page.tsx:388:              <label className="text-[12px] font-semibold uppercase tracking-wider" style={{ color: 'var(--color-muted-foreground)' }}>
+src/app/admin/fahrzeuge/[id]/page.tsx:404:              <label className="text-[12px] font-semibold uppercase tracking-wider" style={{ color: 'var(--color-muted-foreground)' }}>
+src/app/admin/fahrzeuge/[id]/page.tsx:420:              <label className="text-[12px] font-semibold uppercase tracking-wider" style={{ color: 'var(--color-muted-foreground)' }}>
+src/app/admin/fahrzeuge/[id]/page.tsx:451:                <h3 className="text-[16px] font-semibold mb-1" style={{ fontFamily: 'var(--font-display)' }}>
+src/app/admin/fahrzeuge/[id]/page.tsx:454:                <p className="text-[13px]" style={{ color: 'var(--color-muted-foreground)' }}>
+src/app/admin/fahrzeuge/[id]/page.tsx:465:              <Eye size={15} style={{ color: 'var(--color-premium)' }} />
+src/app/admin/fahrzeuge/[id]/page.tsx:471:              <TrendingUp size={15} style={{ color: 'var(--color-premium)' }} />
+src/app/admin/fahrzeuge/[id]/page.tsx:477:              <MessageSquare size={15} style={{ color: 'var(--color-premium)' }} />
+src/app/admin/fahrzeuge/[id]/page.tsx:488:              style={{
+src/app/admin/fahrzeuge/[id]/page.tsx:495:                style={{ width: 72, height: 48, borderRadius: 8, aspectRatio: 'auto' }}
+src/app/admin/fahrzeuge/[id]/page.tsx:509:                <span className="font-mono tabular-nums text-[13px] font-semibold" style={{ color: 'var(--color-foreground)' }}>
+src/app/admin/fahrzeuge/[id]/page.tsx:527:          <h3 className="text-[15px] font-semibold" style={{ fontFamily: 'var(--font-display)' }}>
+src/app/admin/fahrzeuge/[id]/page.tsx:537:              style={{
+src/app/admin/fahrzeuge/[id]/page.tsx:548:                style={{
+src/app/admin/fahrzeuge/[id]/page.tsx:558:                    style={{
+src/app/admin/fahrzeuge/[id]/page.tsx:568:                <div className="text-[13.5px] font-medium" style={{ color: priceRatingKey === opt.key ? opt.color : 'var(--color-foreground)' }}>
+src/app/admin/fahrzeuge/[id]/page.tsx:571:                <div className="text-[11.5px]" style={{ color: 'var(--color-muted-foreground)' }}>
+src/app/admin/fahrzeuge/[id]/page.tsx:589:          <h3 className="text-[15px] font-semibold" style={{ fontFamily: 'var(--font-display)' }}>
+src/app/admin/fahrzeuge/[id]/page.tsx:594:          <div className="grid gap-5" style={{ gridTemplateColumns: 'repeat(2, 1fr)' }}>
+src/app/admin/fahrzeuge/[id]/page.tsx:632:          <h3 className="text-[15px] font-semibold" style={{ fontFamily: 'var(--font-display)' }}>
+src/app/admin/fahrzeuge/[id]/page.tsx:638:          <div className="adm-search" style={{ width: '100%', maxWidth: '100%' }}>
+src/app/admin/fahrzeuge/[id]/page.tsx:639:            <Search size={16} style={{ color: 'var(--color-muted-foreground)', flexShrink: 0 }} />
+src/app/admin/fahrzeuge/[id]/page.tsx:662:                  style={{ color: 'var(--color-muted-foreground)' }}
+src/app/admin/fahrzeuge/[id]/page.tsx:671:                      style={{
+src/app/admin/fahrzeuge/[id]/page.tsx:681:                        style={{
+src/app/admin/fahrzeuge/[id]/page.tsx:713:          <h3 className="text-[15px] font-semibold" style={{ fontFamily: 'var(--font-display)' }}>
+src/app/admin/fahrzeuge/[id]/page.tsx:722:              style={{ borderColor: 'var(--color-border)' }}
+src/app/admin/fahrzeuge/[id]/page.tsx:727:                style={{ width: 160, flexShrink: 0 }}
+src/app/admin/fahrzeuge/[id]/page.tsx:743:                style={{ width: 120, flexShrink: 0 }}
+src/app/admin/fahrzeuge/[id]/page.tsx:762:                style={{ width: 100, flexShrink: 0 }}
+src/app/admin/fahrzeuge/[id]/page.tsx:771:                style={{ marginTop: 2 }}
+src/app/admin/fahrzeuge/[id]/page.tsx:802:            <h3 className="text-[15px] font-semibold" style={{ fontFamily: 'var(--font-display)' }}>
+src/app/admin/fahrzeuge/[id]/page.tsx:809:          <div className="grid gap-4" style={{ gridTemplateColumns: 'repeat(2, 1fr)' }}>
+src/app/admin/fahrzeuge/[id]/page.tsx:821:                style={{ borderColor: 'var(--color-border)' }}
+src/app/admin/fahrzeuge/[id]/page.tsx:837:            style={{ borderColor: 'var(--color-border)' }}
+src/app/admin/fahrzeuge/[id]/page.tsx:854:              <span className="font-mono tabular-nums text-[16px] font-semibold" style={{ minWidth: 28, textAlign: 'center' }}>
+src/app/admin/fahrzeuge/[id]/page.tsx:877:              style={{ color: 'var(--color-muted-foreground)' }}
+src/app/admin/fahrzeuge/[id]/page.tsx:886:                  style={{ borderColor: 'var(--color-border)' }}
+src/app/admin/fahrzeuge/[id]/page.tsx:899:                  <FileCheck size={15} style={{ color: 'var(--color-muted-foreground)' }} />
+src/app/admin/fahrzeuge/[id]/page.tsx:921:            <h3 className="text-[15px] font-semibold" style={{ fontFamily: 'var(--font-display)' }}>
+src/app/admin/fahrzeuge/[id]/page.tsx:932:            style={{ maxWidth: 400, overflow: 'hidden' }}
+src/app/admin/fahrzeuge/[id]/page.tsx:935:            <div className="veh-img alt-3" style={{ borderRadius: '16px 16px 0 0' }}>
+src/app/admin/fahrzeuge/[id]/page.tsx:951:                <h4 className="text-[15px] font-semibold" style={{ fontFamily: 'var(--font-display)' }}>
+src/app/admin/fahrzeuge/[id]/page.tsx:954:                <p className="text-[12px]" style={{ color: 'var(--color-muted-foreground)' }}>
+src/app/admin/fahrzeuge/[id]/page.tsx:960:              <div className="flex items-center gap-4 flex-wrap text-[12px]" style={{ color: 'var(--color-muted-foreground)' }}>
+src/app/admin/fahrzeuge/[id]/page.tsx:974:              <div className="flex items-center justify-between pt-2 border-t" style={{ borderColor: 'var(--color-border)' }}>
+src/app/admin/fahrzeuge/[id]/page.tsx:979:                  <Crown size={16} style={{ color: 'var(--color-premium)' }} />
+src/app/admin/fahrzeuge/[id]/page.tsx:990:        style={{
+src/app/admin/fahrzeuge/[id]/page.tsx:1001:        <div className="flex items-center justify-end gap-3" style={{ maxWidth: 1400 }}>
+src/app/admin/fahrzeuge/[id]/page.tsx:1034:          style={{
+src/app/admin/fahrzeuge/[id]/page.tsx:1046:          <div className="text-[11.5px]" style={{ color: 'var(--color-muted-foreground)' }}>
+src/app/admin/fahrzeuge/[id]/page.tsx:1053:        style={{
+src/app/admin/fahrzeuge/page.tsx:90:      style={{ background: cfg.bg, color: cfg.text }}
+src/app/admin/fahrzeuge/page.tsx:145:              <span className="font-mono tabular-nums text-[11px]" style={{ opacity: 0.7 }}>
+src/app/admin/fahrzeuge/page.tsx:157:          <Link href="/admin/fahrzeuge/new" className="btn btn-primary btn-sm" style={{ textDecoration: 'none' }}>
+src/app/admin/fahrzeuge/page.tsx:165:      <div className="adm-search" style={{ width: '100%', maxWidth: 460 }}>
+src/app/admin/fahrzeuge/page.tsx:166:        <Search size={16} style={{ color: 'var(--color-muted-foreground)', flexShrink: 0 }} />
+src/app/admin/fahrzeuge/page.tsx:181:                <th style={{ width: 40 }}>
+src/app/admin/fahrzeuge/page.tsx:187:                <th style={{ width: 60 }}>Premium</th>
+src/app/admin/fahrzeuge/page.tsx:190:                <th style={{ width: 44 }} />
+src/app/admin/fahrzeuge/page.tsx:205:                        style={{ textDecoration: 'none', color: 'inherit' }}
+src/app/admin/fahrzeuge/page.tsx:209:                          style={{
+src/app/admin/fahrzeuge/page.tsx:224:                            style={{ color: 'var(--color-muted-foreground)' }}
+src/app/admin/fahrzeuge/page.tsx:243:                          style={{ color: 'var(--color-premium)' }}
+src/app/admin/fahrzeuge/page.tsx:250:                        style={{ color: 'var(--color-muted-foreground)' }}
+src/app/admin/fahrzeuge/page.tsx:263:                        style={{
+src/app/admin/layout.tsx:110:            style={{ textDecoration: 'none' }}
+src/app/admin/layout.tsx:114:              style={{ color: 'var(--color-foreground)' }}
+src/app/admin/layout.tsx:120:              style={{ color: 'var(--color-primary)' }}
+src/app/admin/layout.tsx:126:              style={{ color: 'var(--color-foreground)' }}
+src/app/admin/layout.tsx:158:                          <span className="adm-pulse-dot" style={{ color: 'var(--color-success)' }} />
+src/app/admin/layout.tsx:174:            style={{
+src/app/admin/layout.tsx:189:            <span className="text-[13px] font-medium truncate" style={{ color: 'var(--color-foreground)' }}>
+src/app/admin/layout.tsx:192:            <span className="text-[11px] truncate" style={{ color: 'var(--color-muted-foreground)' }}>
+src/app/admin/layout.tsx:211:              <Search size={16} style={{ color: 'var(--color-muted-foreground)', flexShrink: 0 }} />
+src/app/admin/layout.tsx:219:              style={{
+src/app/admin/layout.tsx:232:                style={{
+src/app/admin/anfragen/page.tsx:28:          style={{
+src/app/admin/page.tsx:114:      style={{ background: cfg.bg, color: cfg.text }}
+src/app/admin/page.tsx:171:                  <span style={{ color: kpi.trendColor }}>{kpi.trendIcon}</span>
+src/app/admin/page.tsx:174:                  style={{
+src/app/admin/page.tsx:190:        style={{ gridTemplateColumns: '1.6fr 1fr' }}
+src/app/admin/page.tsx:206:                <h3 className="text-[15px] font-semibold" style={{ fontFamily: 'var(--font-display)' }}>
+src/app/admin/page.tsx:209:                <p className="text-[12px]" style={{ color: 'var(--color-muted-foreground)' }}>
+src/app/admin/page.tsx:220:                  <th style={{ width: 40 }}>
+src/app/admin/page.tsx:226:                  <th style={{ width: 60 }}>Premium</th>
+src/app/admin/page.tsx:242:                            style={{
+src/app/admin/page.tsx:275:                            style={{ color: 'var(--color-premium)' }}
+src/app/admin/page.tsx:321:                style={{ cursor: 'pointer' }}
+src/app/admin/page.tsx:331:                  style={{
+src/app/page.tsx:38:      style={{ transitionTimingFunction: 'cubic-bezier(0.16, 1, 0.3, 1)' }}
+src/app/page.tsx:42:        <div className={cn('veh-img h-full', vehicle.imgAlt)} style={{ aspectRatio: 'auto' }}>
+src/components/sections/hero.tsx:109:        style={{ y: vehicleY, scale: vehicleScale }}
+src/components/sections/hero.tsx:118:        style={{ opacity: contentOpacity, y: contentY }}
+src/components/sections/map-view.tsx:43:          style={{
+src/components/sections/map-view.tsx:54:          style={{
+src/components/sections/map-view.tsx:81:            style={{
+src/components/sections/filter-sidebar.tsx:388:                style={{ backgroundColor: color.hex }}
+src/components/sections/site-header.tsx:566:                    style={{
+src/components/sections/market-price-meter.tsx:68:            style={{ left: `${thumbPosition}%` }}
+src/components/sections/market-price-meter.tsx:100:          <p className="text-sm font-semibold" style={{ color: meta?.accent }}>

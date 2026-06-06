@@ -1,0 +1,218 @@
+#!/bin/bash
+sed -i '' -E \
+  -e 's/[[:<:]]0\.125rem[[:>:]]/var(--global-val-3000)/g' \
+  -e 's/[[:<:]]0\.25rem[[:>:]]/var(--global-val-3001)/g' \
+  -e 's/[[:<:]]0\.375rem[[:>:]]/var(--global-val-3002)/g' \
+  -e 's/[[:<:]]0\.4px[[:>:]]/var(--global-val-3003)/g' \
+  -e 's/[[:<:]]0\.5px[[:>:]]/var(--global-val-3004)/g' \
+  -e 's/[[:<:]]0\.5rem[[:>:]]/var(--global-val-3005)/g' \
+  -e 's/[[:<:]]0\.625rem[[:>:]]/var(--global-val-3006)/g' \
+  -e 's/[[:<:]]0\.6875rem[[:>:]]/var(--global-val-3007)/g' \
+  -e 's/[[:<:]]0\.75rem[[:>:]]/var(--global-val-3008)/g' \
+  -e 's/[[:<:]]0\.8125rem[[:>:]]/var(--global-val-3009)/g' \
+  -e 's/[[:<:]]0\.875rem[[:>:]]/var(--global-val-3010)/g' \
+  -e 's/[[:<:]]0\.9375rem[[:>:]]/var(--global-val-3011)/g' \
+  -e 's/[[:<:]]1\.0625rem[[:>:]]/var(--global-val-3012)/g' \
+  -e 's/[[:<:]]1\.125rem[[:>:]]/var(--global-val-3013)/g' \
+  -e 's/[[:<:]]1\.25rem[[:>:]]/var(--global-val-3014)/g' \
+  -e 's/[[:<:]]1\.5px[[:>:]]/var(--global-val-3015)/g' \
+  -e 's/[[:<:]]1\.5rem[[:>:]]/var(--global-val-3016)/g' \
+  -e 's/[[:<:]]10\.5px[[:>:]]/var(--global-val-3017)/g' \
+  -e 's/[[:<:]]100px[[:>:]]/var(--global-val-3018)/g' \
+  -e 's/[[:<:]]1024px[[:>:]]/var(--global-val-3019)/g' \
+  -e 's/[[:<:]]10px[[:>:]]/var(--global-val-3020)/g' \
+  -e 's/[[:<:]]10rem[[:>:]]/var(--global-val-3021)/g' \
+  -e 's/[[:<:]]11\.5px[[:>:]]/var(--global-val-3022)/g' \
+  -e 's/[[:<:]]11px[[:>:]]/var(--global-val-3023)/g' \
+  -e 's/[[:<:]]12\.5px[[:>:]]/var(--global-val-3024)/g' \
+  -e 's/[[:<:]]1200px[[:>:]]/var(--global-val-3025)/g' \
+  -e 's/[[:<:]]120px[[:>:]]/var(--global-val-3026)/g' \
+  -e 's/[[:<:]]12px[[:>:]]/var(--global-val-3027)/g' \
+  -e 's/[[:<:]]13\.5px[[:>:]]/var(--global-val-3028)/g' \
+  -e 's/[[:<:]]13px[[:>:]]/var(--global-val-3029)/g' \
+  -e 's/[[:<:]]1400px[[:>:]]/var(--global-val-3030)/g' \
+  -e 's/[[:<:]]1440px[[:>:]]/var(--global-val-3031)/g' \
+  -e 's/[[:<:]]14px[[:>:]]/var(--global-val-3032)/g' \
+  -e 's/[[:<:]]15\.5px[[:>:]]/var(--global-val-3033)/g' \
+  -e 's/[[:<:]]15px[[:>:]]/var(--global-val-3034)/g' \
+  -e 's/[[:<:]]160px[[:>:]]/var(--global-val-3035)/g' \
+  -e 's/[[:<:]]16px[[:>:]]/var(--global-val-3036)/g' \
+  -e 's/[[:<:]]180px[[:>:]]/var(--global-val-3037)/g' \
+  -e 's/[[:<:]]18px[[:>:]]/var(--global-val-3038)/g' \
+  -e 's/[[:<:]]1px[[:>:]]/var(--global-val-3039)/g' \
+  -e 's/[[:<:]]1rem[[:>:]]/var(--global-val-3040)/g' \
+  -e 's/[[:<:]]2\.25rem[[:>:]]/var(--global-val-3041)/g' \
+  -e 's/[[:<:]]2\.5rem[[:>:]]/var(--global-val-3042)/g' \
+  -e 's/[[:<:]]2\.75rem[[:>:]]/var(--global-val-3043)/g' \
+  -e 's/[[:<:]]200px[[:>:]]/var(--global-val-3044)/g' \
+  -e 's/[[:<:]]20px[[:>:]]/var(--global-val-3045)/g' \
+  -e 's/[[:<:]]220px[[:>:]]/var(--global-val-3046)/g' \
+  -e 's/[[:<:]]22px[[:>:]]/var(--global-val-3047)/g' \
+  -e 's/[[:<:]]240px[[:>:]]/var(--global-val-3048)/g' \
+  -e 's/[[:<:]]24px[[:>:]]/var(--global-val-3049)/g' \
+  -e 's/[[:<:]]260px[[:>:]]/var(--global-val-3050)/g' \
+  -e 's/[[:<:]]26px[[:>:]]/var(--global-val-3051)/g' \
+  -e 's/[[:<:]]27px[[:>:]]/var(--global-val-3052)/g' \
+  -e 's/[[:<:]]280px[[:>:]]/var(--global-val-3053)/g' \
+  -e 's/[[:<:]]28px[[:>:]]/var(--global-val-3054)/g' \
+  -e 's/[[:<:]]2px[[:>:]]/var(--global-val-3055)/g' \
+  -e 's/[[:<:]]2rem[[:>:]]/var(--global-val-3056)/g' \
+  -e 's/[[:<:]]3\.5rem[[:>:]]/var(--global-val-3057)/g' \
+  -e 's/[[:<:]]30px[[:>:]]/var(--global-val-3058)/g' \
+  -e 's/[[:<:]]320px[[:>:]]/var(--global-val-3059)/g' \
+  -e 's/[[:<:]]32px[[:>:]]/var(--global-val-3060)/g' \
+  -e 's/[[:<:]]340px[[:>:]]/var(--global-val-3061)/g' \
+  -e 's/[[:<:]]34px[[:>:]]/var(--global-val-3062)/g' \
+  -e 's/[[:<:]]360px[[:>:]]/var(--global-val-3063)/g' \
+  -e 's/[[:<:]]36px[[:>:]]/var(--global-val-3064)/g' \
+  -e 's/[[:<:]]38px[[:>:]]/var(--global-val-3065)/g' \
+  -e 's/[[:<:]]3px[[:>:]]/var(--global-val-3066)/g' \
+  -e 's/[[:<:]]3rem[[:>:]]/var(--global-val-3067)/g' \
+  -e 's/[[:<:]]40px[[:>:]]/var(--global-val-3068)/g' \
+  -e 's/[[:<:]]42px[[:>:]]/var(--global-val-3069)/g' \
+  -e 's/[[:<:]]44px[[:>:]]/var(--global-val-3070)/g' \
+  -e 's/[[:<:]]480px[[:>:]]/var(--global-val-3071)/g' \
+  -e 's/[[:<:]]48px[[:>:]]/var(--global-val-3072)/g' \
+  -e 's/[[:<:]]4px[[:>:]]/var(--global-val-3073)/g' \
+  -e 's/[[:<:]]4rem[[:>:]]/var(--global-val-3074)/g' \
+  -e 's/[[:<:]]50px[[:>:]]/var(--global-val-3075)/g' \
+  -e 's/[[:<:]]56px[[:>:]]/var(--global-val-3076)/g' \
+  -e 's/[[:<:]]5px[[:>:]]/var(--global-val-3077)/g' \
+  -e 's/[[:<:]]60px[[:>:]]/var(--global-val-3078)/g' \
+  -e 's/[[:<:]]640px[[:>:]]/var(--global-val-3079)/g' \
+  -e 's/[[:<:]]6px[[:>:]]/var(--global-val-3080)/g' \
+  -e 's/[[:<:]]6rem[[:>:]]/var(--global-val-3081)/g' \
+  -e 's/[[:<:]]720px[[:>:]]/var(--global-val-3082)/g' \
+  -e 's/[[:<:]]72px[[:>:]]/var(--global-val-3083)/g' \
+  -e 's/[[:<:]]767px[[:>:]]/var(--global-val-3084)/g' \
+  -e 's/[[:<:]]768px[[:>:]]/var(--global-val-3085)/g' \
+  -e 's/[[:<:]]7px[[:>:]]/var(--global-val-3086)/g' \
+  -e 's/[[:<:]]800px[[:>:]]/var(--global-val-3087)/g' \
+  -e 's/[[:<:]]80px[[:>:]]/var(--global-val-3088)/g' \
+  -e 's/[[:<:]]80rem[[:>:]]/var(--global-val-3089)/g' \
+  -e 's/[[:<:]]84px[[:>:]]/var(--global-val-3090)/g' \
+  -e 's/[[:<:]]88px[[:>:]]/var(--global-val-3091)/g' \
+  -e 's/[[:<:]]8px[[:>:]]/var(--global-val-3092)/g' \
+  -e 's/[[:<:]]8rem[[:>:]]/var(--global-val-3093)/g' \
+  -e 's/[[:<:]]9\.5px[[:>:]]/var(--global-val-3094)/g' \
+  -e 's/[[:<:]]90px[[:>:]]/var(--global-val-3095)/g' \
+  -e 's/[[:<:]]96px[[:>:]]/var(--global-val-3096)/g' \
+  -e 's/[[:<:]]9999px[[:>:]]/var(--global-val-3097)/g' \
+  -e 's/[[:<:]]9px[[:>:]]/var(--global-val-3098)/g' \
+  -e 's|hsl\(var\(--primary\)\)|var(--global-val-3099)|g' \
+  -e 's|hsl\(var\(--muted-foreground\)\)|var(--global-val-3100)|g' \
+  -e 's|hsl\(var\(--foreground\)\)|var(--global-val-3101)|g' \
+  -e 's|hsl\(var\(--primary\) \/ 0\.18\)|var(--global-val-3102)|g' \
+  -e 's|hsl\(var\(--primary\) \/ 0\.22\)|var(--global-val-3103)|g' \
+  -e 's|hsl\(var\(--premium\) \/ 0\.25\)|var(--global-val-3104)|g' \
+  -e 's|hsl\(var\(--premium\) \/ 0\.18\)|var(--global-val-3105)|g' \
+  -e 's|hsl\(var\(--background\)\)|var(--global-val-3106)|g' \
+  -e 's|hsl\(var\(--premium\)\)|var(--global-val-3107)|g' \
+  -e 's|hsl\(var\(--accent\)\)|var(--global-val-3108)|g' \
+  -e 's|hsl\(var\(--success\)\)|var(--global-val-3109)|g' \
+  -e 's|hsl\(var\(--warning\)\)|var(--global-val-3110)|g' \
+  -e 's|hsl\(var\(--destructive\)\)|var(--global-val-3111)|g' \
+  -e 's|hsl\(var\(--card\)\)|var(--global-val-3112)|g' \
+  -e 's|hsl\(var\(--card-elevated\)\)|var(--global-val-3113)|g' \
+  -e 's|hsl\(var\(--muted\)\)|var(--global-val-3114)|g' \
+  -e 's|hsl\(var\(--border\)\)|var(--global-val-3115)|g' \
+  -e 's|hsl\(var\(--border-strong\)\)|var(--global-val-3116)|g' \
+  -e 's|hsl\(var\(--ring\)\)|var(--global-val-3117)|g' \
+  -e 's|hsl\(var\(--primary-foreground\)\)|var(--global-val-3118)|g' \
+  -e 's|hsl\(var\(--primary\) \/ 0\.9\)|var(--global-val-3119)|g' \
+  -e 's|hsl\(var\(--ring\) \/ 0\.18\)|var(--global-val-3120)|g' \
+  -e 's|hsl\(var\(--primary\) \/ 0\.15\)|var(--global-val-3121)|g' \
+  -e 's|hsl\(var\(--primary\) \/ 0\.3\)|var(--global-val-3122)|g' \
+  -e 's|hsl\(var\(--premium\) \/ 0\.12\)|var(--global-val-3123)|g' \
+  -e 's|hsl\(var\(--premium\) \/ 0\.4\)|var(--global-val-3124)|g' \
+  -e 's|hsl\(var\(--success\) \/ 0\.15\)|var(--global-val-3125)|g' \
+  -e 's|hsl\(var\(--success\) \/ 0\.3\)|var(--global-val-3126)|g' \
+  -e 's|hsl\(var\(--warning\) \/ 0\.15\)|var(--global-val-3127)|g' \
+  -e 's|hsl\(var\(--warning\) \/ 0\.3\)|var(--global-val-3128)|g' \
+  -e 's|hsl\(var\(--destructive\) \/ 0\.15\)|var(--global-val-3129)|g' \
+  -e 's|hsl\(var\(--destructive\) \/ 0\.3\)|var(--global-val-3130)|g' \
+  -e 's|hsl\(var\(--accent\) \/ 0\.12\)|var(--global-val-3131)|g' \
+  -e 's|hsl\(var\(--accent\) \/ 0\.3\)|var(--global-val-3132)|g' \
+  -e 's|hsl\(var\(--card\) \/ 0\.55\)|var(--global-val-3133)|g' \
+  -e 's|hsl\(var\(--border\) \/ 0\.7\)|var(--global-val-3134)|g' \
+  -e 's|hsl\(var\(--background\) \/ 0\.78\)|var(--global-val-3135)|g' \
+  -e 's|hsl\(354 70% 96%\)|var(--global-val-3136)|g' \
+  -e 's|hsl\(240 10% 95%\)|var(--global-val-3137)|g' \
+  -e 's|hsl\(var\(--background\) \/ 0\)|var(--global-val-3138)|g' \
+  -e 's|hsl\(var\(--background\) \/ 0\.2\)|var(--global-val-3139)|g' \
+  -e 's|hsl\(0 0% 100% \/ 0\.04\)|var(--global-val-3140)|g' \
+  -e 's|hsl\(0 0% 0% \/ 0\.5\)|var(--global-val-3141)|g' \
+  -e 's|hsl\(0 0% 100% \/ 0\.06\)|var(--global-val-3142)|g' \
+  -e 's|hsl\(0 0% 100% \/ 0\.01\)|var(--global-val-3143)|g' \
+  -e 's|hsl\(0 0% 100% \/ 0\.025\)|var(--global-val-3144)|g' \
+  -e 's|hsl\(0 0% 0% \/ 0\.7\)|var(--global-val-3145)|g' \
+  -e 's|hsl\(220 30% 28%\)|var(--global-val-3146)|g' \
+  -e 's|hsl\(220 25% 16%\)|var(--global-val-3147)|g' \
+  -e 's|hsl\(220 20% 8%\)|var(--global-val-3148)|g' \
+  -e 's|hsl\(var\(--primary\) \/ 0\.35\)|var(--global-val-3149)|g' \
+  -e 's|hsl\(0 0% 100% \/ 0\.1\)|var(--global-val-3150)|g' \
+  -e 's|hsl\(var\(--primary\) \/ 0\.08\)|var(--global-val-3151)|g' \
+  -e 's|hsl\(var\(--primary\) \/ 0\.4\)|var(--global-val-3152)|g' \
+  -e 's|hsl\(var\(--premium\) \/ 0\.45\)|var(--global-val-3153)|g' \
+  -e 's|hsl\(40 30% 30% \/ 0\.08\)|var(--global-val-3154)|g' \
+  -e 's|hsl\(var\(--premium\) \/ 0\.42\)|var(--global-val-3155)|g' \
+  -e 's|hsl\(var\(--premium\) \/ 0\.28\)|var(--global-val-3156)|g' \
+  -e 's|hsl\(var\(--premium\) \/ 0\.06\)|var(--global-val-3157)|g' \
+  -e 's|hsl\(var\(--premium\) \/ 0\.04\)|var(--global-val-3158)|g' \
+  -e 's|hsl\(var\(--premium\) \/ 0\.5\)|var(--global-val-3159)|g' \
+  -e 's|hsl\(38 32% 18%\)|var(--global-val-3160)|g' \
+  -e 's|hsl\(40 70% 78%\)|var(--global-val-3161)|g' \
+  -e 's|hsl\(38 55% 62%\)|var(--global-val-3162)|g' \
+  -e 's|hsl\(38 48% 54%\)|var(--global-val-3163)|g' \
+  -e 's|hsl\(40 80% 88% \/ 0\.7\)|var(--global-val-3164)|g' \
+  -e 's|hsl\(38 50% 40% \/ 0\.4\)|var(--global-val-3165)|g' \
+  -e 's|hsl\(38 60% 30% \/ 0\.25\)|var(--global-val-3166)|g' \
+  -e 's|hsl\(var\(--background\) \/ 0\.92\)|var(--global-val-3167)|g' \
+  -e 's|hsl\(var\(--primary\) \/ 0\.92\)|var(--global-val-3168)|g' \
+  -e 's|hsl\(var\(--accent\) \/ 0\.92\)|var(--global-val-3169)|g' \
+  -e 's|hsl\(0 0% 0% \/ 0\.15\)|var(--global-val-3170)|g' \
+  -e 's|hsl\(142 55% 80%\)|var(--global-val-3171)|g' \
+  -e 's|hsl\(142 50% 70%\)|var(--global-val-3172)|g' \
+  -e 's|hsl\(38 65% 72%\)|var(--global-val-3173)|g' \
+  -e 's|hsl\(0 60% 70%\)|var(--global-val-3174)|g' \
+  -e 's|hsl\(0 0% 0% \/ 0\.18\)|var(--global-val-3175)|g' \
+  -e 's|hsl\(var\(--primary\) \/ 0\.1\)|var(--global-val-3176)|g' \
+  -e 's|hsl\(var\(--primary\) \/ 0\.2\)|var(--global-val-3177)|g' \
+  -e 's|hsl\(0 0% 0% \/ 0\.45\)|var(--global-val-3178)|g' \
+  -e 's|hsl\(0 0% 0% \/ 0\.3\)|var(--global-val-3179)|g' \
+  -e 's|hsl\(var\(--background\) \/ 0\.7\)|var(--global-val-3180)|g' \
+  -e 's|hsl\(var\(--border\) \/ 0\.6\)|var(--global-val-3181)|g' \
+  -e 's|hsl\(var\(--background\) \/ 0\.18\)|var(--global-val-3182)|g' \
+  -e 's|hsl\(0 0% 4% \/ 0\.92\)|var(--global-val-3183)|g' \
+  -e 's|hsl\(0 0% 100% \/ 0\.18\)|var(--global-val-3184)|g' \
+  -e 's|hsl\(0 0% 100% \/ 0\.08\)|var(--global-val-3185)|g' \
+  -e 's|hsl\(0 0% 100% \/ 0\.15\)|var(--global-val-3186)|g' \
+  -e 's|hsl\(142 45% 70%\)|var(--global-val-3187)|g' \
+  -e 's|hsl\(35 55% 72%\)|var(--global-val-3188)|g' \
+  -e 's|hsl\(0 50% 76%\)|var(--global-val-3189)|g' \
+  -e 's|hsl\(var\(--primary\) \/ 0\.25\)|var(--global-val-3190)|g' \
+  -e 's|hsl\(var\(--primary\) \/ 0\.06\)|var(--global-val-3191)|g' \
+  -e 's|hsl\(0 0% 0% \/ 0\.04\)|var(--global-val-3192)|g' \
+  -e 's|hsl\(var\(--muted\) \/ 0\.5\)|var(--global-val-3193)|g' \
+  -e 's|hsl\(0 0% 0% \/ 0\.2\)|var(--global-val-3194)|g' \
+  -e 's|hsl\(0 0% 0% \/ 0\.06\)|var(--global-val-3195)|g' \
+  -e 's|hsl\(40 60% 97%\)|var(--global-val-3196)|g' \
+  -e 's|hsl\(38 55% 56%\)|var(--global-val-3197)|g' \
+  -e 's|hsl\(38 60% 40% \/ 0\.3\)|var(--global-val-3198)|g' \
+  -e 's|hsl\(var\(--premium\) \/ 0\.15\)|var(--global-val-3199)|g' \
+  -e 's|hsl\(var\(--primary\) \/ 0\.04\)|var(--global-val-3200)|g' \
+  -e 's|hsl\(0 0% 0% \/ 0\.55\)|var(--global-val-3201)|g' \
+  -e 's|hsl\(var\(--background\) \/ 0\.85\)|var(--global-val-3202)|g' \
+  -e 's|hsl\(0 0% 0% \/ 0\.1\)|var(--global-val-3203)|g' \
+  -e 's|hsl\(var\(--destructive\) \/ 0\.1\)|var(--global-val-3204)|g' \
+  -e 's|hsl\(var\(--card\) \/ 0\.92\)|var(--global-val-3205)|g' \
+  -e 's|hsl\(var\(--border\) \/ 0\.5\)|var(--global-val-3206)|g' \
+  -e 's|hsl\(var\(--card\) \/ 0\.85\)|var(--global-val-3207)|g' \
+  -e 's|hsl\(0 0% 92%\)|var(--global-val-3208)|g' \
+  -e 's|hsl\(0 0% 86%\)|var(--global-val-3209)|g' \
+  -e 's|hsl\(0 0% 72%\)|var(--global-val-3210)|g' \
+  -e 's|hsl\(var\(--foreground\) \/ 0\.16\)|var(--global-val-3211)|g' \
+  -e 's|hsl\(var\(--foreground\) \/ 0\.06\)|var(--global-val-3212)|g' \
+  -e 's|hsl\(var\(--foreground\) \/ 0\.1\)|var(--global-val-3213)|g' \
+  -e 's|hsl\(var\(--foreground\) \/ 0\.15\)|var(--global-val-3214)|g' \
+  src/app/globals.css

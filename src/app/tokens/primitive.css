@@ -1,0 +1,477 @@
+:root {
+  /* Colors: Puristic Off-White */
+  --color-off-white-50: hsl(30, 25%, 98%);
+  --color-off-white-100: hsl(30, 25%, 97%);
+  --color-off-white-200: hsl(30, 25%, 92%);
+  --color-off-white-300: hsl(30, 25%, 85%);
+  --color-off-white-400: hsl(30, 25%, 75%);
+  --color-off-white-500: hsl(30, 25%, 65%);
+  --color-off-white-600: hsl(30, 25%, 50%);
+  --color-off-white-700: hsl(30, 25%, 40%);
+  --color-off-white-800: hsl(30, 25%, 25%);
+  --color-off-white-900: hsl(30, 25%, 15%);
+  --color-off-white-950: hsl(30, 25%, 10%);
+
+  /* Colors: Primary Red */
+  --color-red-50: hsl(0, 72%, 95%);
+  --color-red-100: hsl(0, 72%, 90%);
+  --color-red-200: hsl(0, 72%, 80%);
+  --color-red-300: hsl(0, 72%, 70%);
+  --color-red-400: hsl(0, 72%, 60%);
+  --color-red-500: hsl(0, 72%, 50%);
+  --color-red-600: hsl(0, 72%, 42%);
+  --color-red-700: hsl(0, 72%, 35%);
+  --color-red-800: hsl(0, 72%, 25%);
+  --color-red-900: hsl(0, 72%, 15%);
+  --color-red-950: hsl(0, 72%, 10%);
+
+  /* Colors: Accent Gold */
+  --color-gold-50: hsl(38, 55%, 95%);
+  --color-gold-100: hsl(38, 55%, 90%);
+  --color-gold-200: hsl(38, 55%, 80%);
+  --color-gold-300: hsl(38, 55%, 70%);
+  --color-gold-400: hsl(38, 55%, 60%);
+  --color-gold-500: hsl(38, 55%, 50%);
+  --color-gold-600: hsl(38, 55%, 42%);
+  --color-gold-700: hsl(38, 55%, 35%);
+  --color-gold-800: hsl(38, 55%, 25%);
+  --color-gold-900: hsl(38, 55%, 15%);
+  --color-gold-950: hsl(38, 55%, 10%);
+
+  /* Status Primitives */
+  --color-green-600: hsl(142, 60%, 36%);
+  --color-orange-600: hsl(32, 90%, 44%);
+  --color-blue-600: hsl(217, 80%, 48%);
+
+  /* Typography: Fonts */
+  --font-display: 'Space Grotesk', system-ui, sans-serif;
+  --font-body: 'Inter', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', 'SF Mono', monospace;
+
+  /* Typography: Font Sizes */
+  --t-2xs: 0.512rem;
+  --t-xs: 0.64rem;
+  --t-sm: 0.8rem;
+  --t-base: 1rem;
+  --t-lg: 1.25rem;
+  --t-xl: 1.563rem;
+  --t-2xl: 1.953rem;
+  --t-3xl: clamp(1.953rem, 4vw + 1rem, 2.441rem);
+  --t-4xl: clamp(2.441rem, 5vw + 1rem, 3.052rem);
+
+  /* Spacing */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+  --space-24: 6rem;
+  --space-32: 8rem;
+
+  /* Layout */
+  --layout-col-sm: var(--size-100);
+  --layout-col-md: 120px;
+  --layout-col-lg: 160px;
+  --layout-sidebar-sm: 320px;
+  --layout-sidebar-md: 400px;
+  --layout-card-img: 280px;
+  --layout-hero-sm: 400px;
+  --layout-hero-md: 500px;
+  --layout-hero-lg: 600px;
+  --layout-content-md: 600px;
+  --layout-content-lg: 640px;
+  --layout-max-width: 1400px;
+
+  /* Border Radius */
+  --radius-none: var(--border-width-0);
+  --radius-sm: var(--space-0-5);
+  --radius-md: var(--space-1-5);
+  --radius-lg: 0.5rem;
+  --radius-xl: 0.75rem;
+  --radius-full: var(--radius-full);
+
+  /* Shadows */
+  --shadow-1: 0 var(--border-width-1) var(--border-width-2) rgba(0,0,0,0.05);
+  --shadow-2: 0 var(--border-width-4) 6px rgba(0,0,0,0.1);
+  --shadow-3: 0 var(--size-10) var(--size-15) rgba(0,0,0,0.1);
+  --shadow-4: 0 var(--size-20) 25px rgba(0,0,0,0.15);
+  --shadow-5: 0 25px 50px rgba(0,0,0,0.25);
+
+  /* Motion */
+  --ease-in: cubic-bezier(0.4, 0, 1, 1);
+  --ease-out: cubic-bezier(0, 0, 0.2, 1);
+  --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+  --duration-75: 75ms;
+  --duration-100: 100ms;
+  --duration-150: 150ms;
+  --duration-200: 200ms;
+  --duration-300: 300ms;
+  --duration-500: 500ms;
+  --duration-700: 700ms;
+  --duration-1000: 1000ms;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --duration-75: 0.01ms !important;
+    --duration-100: 0.01ms !important;
+    --duration-150: 0.01ms !important;
+    --duration-200: 0.01ms !important;
+    --duration-300: 0.01ms !important;
+    --duration-500: 0.01ms !important;
+    --duration-700: 0.01ms !important;
+    --duration-1000: 0.01ms !important;
+  }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-delay: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    transition-delay: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+
+:root {
+  /* Additional Space */
+  --space-0-5: 0.125rem;
+  --space-1-5: 0.375rem;
+  --space-2-5: 0.625rem;
+  --space-2-75: 0.6875rem;
+  --space-2-4: 0.6rem;
+  --space-3-25: 0.8125rem;
+  --space-3-375: 0.84375rem;
+  --space-3-5: 0.875rem;
+  --space-4-5: 1.125rem;
+  --space-7: 1.75rem;
+  --space-7-5: 1.875rem;
+  --space-9: 2.25rem;
+  --space-11: 2.75rem;
+  --space-13: 3.25rem;
+  --space-14: 3.5rem;
+  --space-15: 3.75rem;
+  --space-18: 4.5rem;
+  --space-28: 7rem;
+  --space-40: 10rem;
+  --space-48: 12rem;
+  --space-64: 16rem;
+  --space-80: 20rem;
+  --space-96: 24rem;
+  --space-112: 28rem;
+  --space-128: 32rem;
+  --space-144: 36rem;
+  --space-168: 42rem;
+  --space-192: 48rem;
+  --space-224: 56rem;
+  --space-256: 64rem;
+
+  /* Borders */
+  --border-width-0: 0px;
+  --border-width-1: 1px;
+  --border-width-2: 2px;
+  --border-width-3: 3px;
+  --border-width-4: 4px;
+
+  /* Additional Pixels (for layout, sizes, etc.) */
+  --size-10: 10px;
+  --size-14: 14px;
+  --size-15: 15px;
+  --size-20: 20px;
+  --size-40: 40px;
+  --size-48: 48px;
+  --size-60: 60px;
+  --size-96: 96px;
+  --size-100: 100px;
+  --size-158: 158px;
+  --size-360: 360px;
+  --size-580: 580px;
+  --size-720: 720px;
+
+  /* Ad-hoc Colors */
+  --color-hsl-1: hsl(0 0% 100% / 0.4);
+  --color-hsl-2: hsl(0 0% 100% / 0.5);
+  --color-hsl-3: hsl(0 60% 70%);
+  --color-hsl-4: hsl(0 72% 42% / 0.07);
+  --color-hsl-5: hsl(0, 72%, 42% / 0.35);
+  --color-hsl-6: hsl(142 50% 70%);
+  --color-hsl-7: hsl(220, 15%, 13%);
+  --color-hsl-8: hsl(220, 20%, 18%);
+  --color-hsl-9: hsl(30 30% 97%);
+  --color-hsl-10: hsl(38 55% 48% / 0.12);
+  --color-hsl-11: hsl(38 55% 48%);
+  --color-hsl-12: hsl(38 65% 72%);
+  --color-hsl-13: hsl(38 70% 38%);
+  --color-hsl-14: hsl(38, 32%, 18%);
+  --color-hsl-15: hsl(38, 55%, 62%);
+  --color-hsl-16: hsl(38, 60%, 30% / 0.4);
+  --color-hsl-17: hsl(40, 70%, 78%);
+  --color-hsl-18: hsl(42 60% 55%);
+
+  --color-rgb-1: rgb(0 0 0 / 0.05);
+  --color-rgb-2: rgb(0 0 0 / 0.1);
+  --color-rgb-3: rgb(0 0 0 / 0.4);
+  --color-rgb-4: rgb(255 255 255 / 0.1);
+  --color-rgb-5: rgb(255 255 255 / 0.2);
+  --color-rgb-6: rgb(255 255 255 / 0.5);
+  --color-rgb-7: rgb(255 255 255 / 0.7);
+  --color-rgb-8: rgb(255 255 255 / 0.8);
+
+  --global-val-3000: 0.125rem;
+  --global-val-3001: 0.25rem;
+  --global-val-3002: 0.375rem;
+  --global-val-3003: 0.4px;
+  --global-val-3004: 0.5px;
+  --global-val-3005: 0.5rem;
+  --global-val-3006: 0.625rem;
+  --global-val-3007: 0.6875rem;
+  --global-val-3008: 0.75rem;
+  --global-val-3009: 0.8125rem;
+  --global-val-3010: 0.875rem;
+  --global-val-3011: 0.9375rem;
+  --global-val-3012: 1.0625rem;
+  --global-val-3013: 1.125rem;
+  --global-val-3014: 1.25rem;
+  --global-val-3015: 1.5px;
+  --global-val-3016: 1.5rem;
+  --global-val-3017: 10.5px;
+  --global-val-3018: 100px;
+  --global-val-3019: 1024px;
+  --global-val-3020: 10px;
+  --global-val-3021: 10rem;
+  --global-val-3022: 11.5px;
+  --global-val-3023: 11px;
+  --global-val-3024: 12.5px;
+  --global-val-3025: 1200px;
+  --global-val-3026: 120px;
+  --global-val-3027: 12px;
+  --global-val-3028: 13.5px;
+  --global-val-3029: 13px;
+  --global-val-3030: 1400px;
+  --global-val-3031: 1440px;
+  --global-val-3032: 14px;
+  --global-val-3033: 15.5px;
+  --global-val-3034: 15px;
+  --global-val-3035: 160px;
+  --global-val-3036: 16px;
+  --global-val-3037: 180px;
+  --global-val-3038: 18px;
+  --global-val-3039: 1px;
+  --global-val-3040: 1rem;
+  --global-val-3041: 2.25rem;
+  --global-val-3042: 2.5rem;
+  --global-val-3043: 2.75rem;
+  --global-val-3044: 200px;
+  --global-val-3045: 20px;
+  --global-val-3046: 220px;
+  --global-val-3047: 22px;
+  --global-val-3048: 240px;
+  --global-val-3049: 24px;
+  --global-val-3050: 260px;
+  --global-val-3051: 26px;
+  --global-val-3052: 27px;
+  --global-val-3053: 280px;
+  --global-val-3054: 28px;
+  --global-val-3055: 2px;
+  --global-val-3056: 2rem;
+  --global-val-3057: 3.5rem;
+  --global-val-3058: 30px;
+  --global-val-3059: 320px;
+  --global-val-3060: 32px;
+  --global-val-3061: 340px;
+  --global-val-3062: 34px;
+  --global-val-3063: 360px;
+  --global-val-3064: 36px;
+  --global-val-3065: 38px;
+  --global-val-3066: 3px;
+  --global-val-3067: 3rem;
+  --global-val-3068: 40px;
+  --global-val-3069: 42px;
+  --global-val-3070: 44px;
+  --global-val-3071: 480px;
+  --global-val-3072: 48px;
+  --global-val-3073: 4px;
+  --global-val-3074: 4rem;
+  --global-val-3075: 50px;
+  --global-val-3076: 56px;
+  --global-val-3077: 5px;
+  --global-val-3078: 60px;
+  --global-val-3079: 640px;
+  --global-val-3080: 6px;
+  --global-val-3081: 6rem;
+  --global-val-3082: 720px;
+  --global-val-3083: 72px;
+  --global-val-3084: 767px;
+  --global-val-3085: 768px;
+  --global-val-3086: 7px;
+  --global-val-3087: 800px;
+  --global-val-3088: 80px;
+  --global-val-3089: 80rem;
+  --global-val-3090: 84px;
+  --global-val-3091: 88px;
+  --global-val-3092: 8px;
+  --global-val-3093: 8rem;
+  --global-val-3094: 9.5px;
+  --global-val-3095: 90px;
+  --global-val-3096: 96px;
+  --global-val-3097: 9999px;
+  --global-val-3098: 9px;
+  --global-val-3099: hsl(var(--primary));
+  --global-val-3100: hsl(var(--muted-foreground));
+  --global-val-3101: hsl(var(--foreground));
+  --global-val-3102: hsl(var(--primary) / 0.18);
+  --global-val-3103: hsl(var(--primary) / 0.22);
+  --global-val-3104: hsl(var(--premium) / 0.25);
+  --global-val-3105: hsl(var(--premium) / 0.18);
+  --global-val-3106: hsl(var(--background));
+  --global-val-3107: hsl(var(--premium));
+  --global-val-3108: hsl(var(--accent));
+  --global-val-3109: hsl(var(--success));
+  --global-val-3110: hsl(var(--warning));
+  --global-val-3111: hsl(var(--destructive));
+  --global-val-3112: hsl(var(--card));
+  --global-val-3113: hsl(var(--card-elevated));
+  --global-val-3114: hsl(var(--muted));
+  --global-val-3115: hsl(var(--border));
+  --global-val-3116: hsl(var(--border-strong));
+  --global-val-3117: hsl(var(--ring));
+  --global-val-3118: hsl(var(--primary-foreground));
+  --global-val-3119: hsl(var(--primary) / 0.9);
+  --global-val-3120: hsl(var(--ring) / 0.18);
+  --global-val-3121: hsl(var(--primary) / 0.15);
+  --global-val-3122: hsl(var(--primary) / 0.3);
+  --global-val-3123: hsl(var(--premium) / 0.12);
+  --global-val-3124: hsl(var(--premium) / 0.4);
+  --global-val-3125: hsl(var(--success) / 0.15);
+  --global-val-3126: hsl(var(--success) / 0.3);
+  --global-val-3127: hsl(var(--warning) / 0.15);
+  --global-val-3128: hsl(var(--warning) / 0.3);
+  --global-val-3129: hsl(var(--destructive) / 0.15);
+  --global-val-3130: hsl(var(--destructive) / 0.3);
+  --global-val-3131: hsl(var(--accent) / 0.12);
+  --global-val-3132: hsl(var(--accent) / 0.3);
+  --global-val-3133: hsl(var(--card) / 0.55);
+  --global-val-3134: hsl(var(--border) / 0.7);
+  --global-val-3135: hsl(var(--background) / 0.78);
+  --global-val-3136: hsl(354 70% 96%);
+  --global-val-3137: hsl(240 10% 95%);
+  --global-val-3138: hsl(var(--background) / 0);
+  --global-val-3139: hsl(var(--background) / 0.2);
+  --global-val-3140: hsl(0 0% 100% / 0.04);
+  --global-val-3141: hsl(0 0% 0% / 0.5);
+  --global-val-3142: hsl(0 0% 100% / 0.06);
+  --global-val-3143: hsl(0 0% 100% / 0.01);
+  --global-val-3144: hsl(0 0% 100% / 0.025);
+  --global-val-3145: hsl(0 0% 0% / 0.7);
+  --global-val-3146: hsl(220 30% 28%);
+  --global-val-3147: hsl(220 25% 16%);
+  --global-val-3148: hsl(220 20% 8%);
+  --global-val-3149: hsl(var(--primary) / 0.35);
+  --global-val-3150: hsl(0 0% 100% / 0.1);
+  --global-val-3151: hsl(var(--primary) / 0.08);
+  --global-val-3152: hsl(var(--primary) / 0.4);
+  --global-val-3153: hsl(var(--premium) / 0.45);
+  --global-val-3154: hsl(40 30% 30% / 0.08);
+  --global-val-3155: hsl(var(--premium) / 0.42);
+  --global-val-3156: hsl(var(--premium) / 0.28);
+  --global-val-3157: hsl(var(--premium) / 0.06);
+  --global-val-3158: hsl(var(--premium) / 0.04);
+  --global-val-3159: hsl(var(--premium) / 0.5);
+  --global-val-3160: hsl(38 32% 18%);
+  --global-val-3161: hsl(40 70% 78%);
+  --global-val-3162: hsl(38 55% 62%);
+  --global-val-3163: hsl(38 48% 54%);
+  --global-val-3164: hsl(40 80% 88% / 0.7);
+  --global-val-3165: hsl(38 50% 40% / 0.4);
+  --global-val-3166: hsl(38 60% 30% / 0.25);
+  --global-val-3167: hsl(var(--background) / 0.92);
+  --global-val-3168: hsl(var(--primary) / 0.92);
+  --global-val-3169: hsl(var(--accent) / 0.92);
+  --global-val-3170: hsl(0 0% 0% / 0.15);
+  --global-val-3171: hsl(142 55% 80%);
+  --global-val-3172: hsl(142 50% 70%);
+  --global-val-3173: hsl(38 65% 72%);
+  --global-val-3174: hsl(0 60% 70%);
+  --global-val-3175: hsl(0 0% 0% / 0.18);
+  --global-val-3176: hsl(var(--primary) / 0.1);
+  --global-val-3177: hsl(var(--primary) / 0.2);
+  --global-val-3178: hsl(0 0% 0% / 0.45);
+  --global-val-3179: hsl(0 0% 0% / 0.3);
+  --global-val-3180: hsl(var(--background) / 0.7);
+  --global-val-3181: hsl(var(--border) / 0.6);
+  --global-val-3182: hsl(var(--background) / 0.18);
+  --global-val-3183: hsl(0 0% 4% / 0.92);
+  --global-val-3184: hsl(0 0% 100% / 0.18);
+  --global-val-3185: hsl(0 0% 100% / 0.08);
+  --global-val-3186: hsl(0 0% 100% / 0.15);
+  --global-val-3187: hsl(142 45% 70%);
+  --global-val-3188: hsl(35 55% 72%);
+  --global-val-3189: hsl(0 50% 76%);
+  --global-val-3190: hsl(var(--primary) / 0.25);
+  --global-val-3191: hsl(var(--primary) / 0.06);
+  --global-val-3192: hsl(0 0% 0% / 0.04);
+  --global-val-3193: hsl(var(--muted) / 0.5);
+  --global-val-3194: hsl(0 0% 0% / 0.2);
+  --global-val-3195: hsl(0 0% 0% / 0.06);
+  --global-val-3196: hsl(40 60% 97%);
+  --global-val-3197: hsl(38 55% 56%);
+  --global-val-3198: hsl(38 60% 40% / 0.3);
+  --global-val-3199: hsl(var(--premium) / 0.15);
+  --global-val-3200: hsl(var(--primary) / 0.04);
+  --global-val-3201: hsl(0 0% 0% / 0.55);
+  --global-val-3202: hsl(var(--background) / 0.85);
+  --global-val-3203: hsl(0 0% 0% / 0.1);
+  --global-val-3204: hsl(var(--destructive) / 0.1);
+  --global-val-3205: hsl(var(--card) / 0.92);
+  --global-val-3206: hsl(var(--border) / 0.5);
+  --global-val-3207: hsl(var(--card) / 0.85);
+  --global-val-3208: hsl(0 0% 92%);
+  --global-val-3209: hsl(0 0% 86%);
+  --global-val-3210: hsl(0 0% 72%);
+  --global-val-3211: hsl(var(--foreground) / 0.16);
+  --global-val-3212: hsl(var(--foreground) / 0.06);
+  --global-val-3213: hsl(var(--foreground) / 0.1);
+  --global-val-3214: hsl(var(--foreground) / 0.15);
+}
+
+/* Extracted hardcoded colors */
+:root {
+  --overlay-heavy: rgba(0,0,0,0.8);
+  --overlay-light: rgba(0,0,0,0.2);
+  --overlay-gradient-start: transparent;
+  --overlay-gradient-mid: rgba(0,0,0,0.18);
+  --overlay-gradient-end: rgba(0,0,0,0.42);
+  
+  --shadow-card-1: rgba(40,20,20,0.06);
+  --shadow-card-2: rgba(40,20,20,0.04);
+  --shadow-card-hover-1: rgba(40,20,20,0.16);
+  --shadow-card-hover-2: rgba(40,20,20,0.08);
+  --shadow-modal-1: rgba(40,20,20,0.24);
+  --shadow-modal-2: rgba(0,0,0,0.04);
+  
+  --shadow-thumb: rgba(0,0,0,0.3);
+  --shadow-generic: rgba(0,0,0,0.12);
+
+  --bg-grad-0: #ffffff;
+  --bg-grad-100: #ececef;
+  --bg-grad-alt1-0: #fafafa;
+  --bg-grad-alt1-100: #e5e5e8;
+  --bg-grad-alt2-0: #f8f8fa;
+  --bg-grad-alt2-100: #e8e8eb;
+  --bg-grad-alt3-0: #fbfbfd;
+  --bg-grad-alt3-100: #e6e6e9;
+  --bg-grad-alt4-0: #f6f6f8;
+  --bg-grad-alt4-100: #e3e3e6;
+  --bg-grad-alt5-0: #f9f9fb;
+  --bg-grad-alt5-100: #ebebee;
+  --bg-grad-alt6-0: #fafafc;
+  --bg-grad-alt6-100: #e7e7ea;
+  --bg-grad-alt7-0: #f7f7f9;
+  --bg-grad-alt7-100: #e4e4e7;
+}

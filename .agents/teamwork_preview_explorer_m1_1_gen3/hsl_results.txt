@@ -1,0 +1,51 @@
+src/app/calculator/page.tsx:80:  { id: 'load', label: 'Ladezeit', icon: <Clock className="w-4 h-4" />, color: 'hsl(0, 72%, 42%)', strokeColor: 'hsl(0, 72%, 42%)' },
+src/app/calculator/page.tsx:81:  { id: 'mobile', label: 'Mobil', icon: <Smartphone className="w-4 h-4" />, color: 'hsl(14, 70%, 48%)', strokeColor: 'hsl(14, 70%, 48%)' },
+src/app/calculator/page.tsx:82:  { id: 'seo', label: 'SEO', icon: <Search className="w-4 h-4" />, color: 'hsl(38, 55%, 48%)', strokeColor: 'hsl(38, 55%, 48%)' },
+src/app/calculator/page.tsx:83:  { id: 'trust', label: 'Vertrauen', icon: <ShieldCheck className="w-4 h-4" />, color: 'hsl(217, 70%, 50%)', strokeColor: 'hsl(217, 70%, 50%)' },
+src/app/calculator/page.tsx:183:        <circle cx="100" cy="100" r={radius} fill="none" stroke="hsl(30, 20%, 93%)" strokeWidth="24" />
+src/app/calculator/page.tsx:544:        <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_50%_at_50%_-20%,hsl(0_72%_42%_/_0.06),transparent)]" />
+src/app/kontakt/page.tsx:174:                  'linear-gradient(hsl(0 0% 100% / 0.06) 1px, transparent 1px), linear-gradient(90deg, hsl(0 0% 100% / 0.06) 1px, transparent 1px)',
+src/app/kontakt/page.tsx:181:              <div className="w-5 h-5 rounded-full bg-primary shadow-[0_0_20px_hsl(0_72%_42%/0.5)]" />
+src/app/kontakt/page.tsx:191:            <div className="absolute inset-0 bg-[radial-gradient(50%_50%_at_50%_50%,hsl(0_72%_42%/0.08),transparent)]" />
+src/app/preise/page.tsx:809:        <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_50%_at_50%_-20%,hsl(0_72%_42%_/_0.06),transparent)]" />
+src/app/finanzierung/page.tsx:74:    { label: 'Anzahlung', value: anzahlung, color: 'hsl(var(--color-muted-foreground))' },
+src/app/finanzierung/page.tsx:75:    { label: 'Raten', value: results.monthly * laufzeit, color: 'hsl(var(--color-primary))' },
+src/app/finanzierung/page.tsx:76:    { label: 'Schlussrate', value: schlussrate, color: 'hsl(var(--color-accent))' },
+src/app/fahrzeuge/page.tsx:142:        <div className="absolute inset-0 bg-[radial-gradient(70%_70%_at_80%_20%,hsl(354,70%,96%)_0%,transparent_60%),radial-gradient(60%_60%_at_20%_90%,hsl(240,10%,95%)_0%,transparent_60%)]" />
+src/app/admin/fahrzeuge/[id]/page.tsx:72:  { key: 'sehr-gut', label: 'Sehr guter Preis', desc: 'Unter Marktwert', color: 'var(--color-success)', accent: 'hsl(142 60% 36% / 0.1)' },
+src/app/admin/fahrzeuge/[id]/page.tsx:73:  { key: 'gut', label: 'Guter Preis', desc: 'Leicht unter Markt', color: 'var(--color-success)', accent: 'hsl(142 60% 36% / 0.08)' },
+src/app/admin/fahrzeuge/[id]/page.tsx:74:  { key: 'fair', label: 'Fairer Preis', desc: 'Marktkonform', color: 'var(--color-warning)', accent: 'hsl(32 90% 44% / 0.08)' },
+src/app/admin/fahrzeuge/[id]/page.tsx:490:                borderColor: 'hsl(38 55% 42% / 0.3)',
+src/app/admin/fahrzeuge/[id]/page.tsx:991:          background: 'hsl(0 0% 100% / 0.92)',
+src/app/admin/fahrzeuge/[id]/page.tsx:1038:            background: 'hsl(0 72% 42% / 0.08)',
+src/app/admin/fahrzeuge/[id]/page.tsx:1059:          (e.currentTarget as HTMLDivElement).style.background = 'hsl(0 72% 42% / 0.03)';
+src/app/admin/fahrzeuge/page.tsx:57:    bg: 'hsl(142 60% 36% / 0.12)',
+src/app/admin/fahrzeuge/page.tsx:68:    bg: 'hsl(32 90% 44% / 0.12)',
+src/app/admin/anfragen/page.tsx:32:            background: 'hsl(0 72% 42% / 0.08)',
+src/app/admin/page.tsx:81:    bg: 'hsl(142 60% 36% / 0.12)',
+src/app/admin/page.tsx:92:    bg: 'hsl(32 90% 44% / 0.12)',
+src/app/admin/page.tsx:132:  { initials: 'MH', name: 'Markus Hoffmann', vehicle: 'Anfrage zu Audi RS6 Avant', time: 'Vor 12 Min.', color: 'hsl(217 80% 48%)' },
+src/app/admin/page.tsx:133:  { initials: 'SR', name: 'Dr. Sebastian Renz', vehicle: 'Anfrage zu Porsche 911 GT3', time: 'Vor 34 Min.', color: 'hsl(142 60% 36%)' },
+src/app/admin/page.tsx:134:  { initials: 'CB', name: 'Christine Bauer', vehicle: 'Anfrage zu BMW M3 Competition', time: 'Vor 1 Std.', color: 'hsl(32 90% 44%)' },
+src/app/admin/page.tsx:135:  { initials: 'TW', name: 'Thomas Weber', vehicle: 'Anfrage zu Mercedes G 63 AMG', time: 'Vor 2 Std.', color: 'hsl(0 72% 42%)' },
+src/components/ui/card.tsx:46:            "bg-gradient-to-r from-[hsl(38_55%_48%)] via-[hsl(42_60%_55%)] to-[hsl(38_55%_48%)]",
+src/components/ui/placeholder.tsx:25:    "bg-[hsl(30_30%_97%)]",
+src/components/ui/placeholder.tsx:26:    "[background-image:repeating-linear-gradient(135deg,transparent,transparent_14px,hsl(0_72%_42%/0.07)_14px,hsl(0_72%_42%/0.07)_15px)]",
+src/components/ui/placeholder.tsx:29:    "bg-[hsl(30_30%_97%)]",
+src/components/ui/placeholder.tsx:30:    "[background-image:repeating-linear-gradient(135deg,transparent,transparent_14px,hsl(38_55%_48%/0.12)_14px,hsl(38_55%_48%/0.12)_15px)]",
+src/components/ui/placeholder.tsx:32:  editorial: "bg-[hsl(30_30%_97%)]",
+src/components/ui/badge.tsx:25:    "bg-gradient-to-r from-[hsl(38_55%_48%)] via-[hsl(42_60%_55%)] to-[hsl(38_55%_48%)]",
+src/components/sections/map-view.tsx:34:        'bg-[hsl(220,15%,13%)]',
+src/components/sections/map-view.tsx:45:              linear-gradient(hsl(0 0% 100% / 0.4) 1px, transparent 1px),
+src/components/sections/map-view.tsx:46:              linear-gradient(90deg, hsl(0 0% 100% / 0.4) 1px, transparent 1px)
+src/components/sections/map-view.tsx:56:              linear-gradient(45deg, hsl(0 0% 100% / 0.5) 1px, transparent 1px),
+src/components/sections/map-view.tsx:57:              linear-gradient(-45deg, hsl(0 0% 100% / 0.5) 1px, transparent 1px)
+src/components/sections/map-view.tsx:63:        <div className="absolute inset-0 bg-[radial-gradient(ellipse_60%_50%_at_50%_50%,hsl(220,20%,18%)_0%,transparent_70%)]" />
+src/components/sections/map-view.tsx:94:                  ? 'bg-gradient-to-r from-[hsl(40,70%,78%)] to-[hsl(38,55%,62%)] text-[hsl(38,32%,18%)] shadow-[0_4px_14px_hsl(38,60%,30%/0.4)]'
+src/components/sections/map-view.tsx:95:                  : 'bg-primary text-primary-foreground shadow-[0_4px_14px_hsl(0,72%,42%/0.35)]'
+src/components/sections/map-view.tsx:104:                    ? 'bg-[hsl(38,55%,62%)]'
+src/components/sections/map-view.tsx:132:          <span className="w-2.5 h-2.5 rounded-full bg-gradient-to-r from-[hsl(40,70%,78%)] to-[hsl(38,55%,62%)]" />
+src/components/sections/market-price-meter.tsx:85:                zone.key === 'good' && 'bg-[hsl(142_50%_70%)]',
+src/components/sections/market-price-meter.tsx:86:                zone.key === 'fair' && 'bg-[hsl(38_65%_72%)]',
+src/components/sections/market-price-meter.tsx:87:                zone.key === 'high' && 'bg-[hsl(0_60%_70%)]'
+src/components/admin/status-pill.tsx:29:    text: "text-[hsl(38_70%_38%)]",

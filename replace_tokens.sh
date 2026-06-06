@@ -1,0 +1,78 @@
+#!/bin/bash
+find src/components src/app -type f \( -name "*.css" -o -name "*.tsx" \) -exec sed -i '' -E \
+  -e 's/[[:<:]]0\.125rem[[:>:]]/var(--space-0-5)/g' \
+  -e 's/[[:<:]]0\.375rem[[:>:]]/var(--space-1-5)/g' \
+  -e 's/[[:<:]]0\.625rem[[:>:]]/var(--space-2-5)/g' \
+  -e 's/[[:<:]]0\.6875rem[[:>:]]/var(--space-2-75)/g' \
+  -e 's/[[:<:]]0\.6rem[[:>:]]/var(--space-2-4)/g' \
+  -e 's/[[:<:]]0\.8125rem[[:>:]]/var(--space-3-25)/g' \
+  -e 's/[[:<:]]0\.84375rem[[:>:]]/var(--space-3-375)/g' \
+  -e 's/[[:<:]]0\.875rem[[:>:]]/var(--space-3-5)/g' \
+  -e 's/[[:<:]]1\.125rem[[:>:]]/var(--space-4-5)/g' \
+  -e 's/[[:<:]]1\.75rem[[:>:]]/var(--space-7)/g' \
+  -e 's/[[:<:]]1\.875rem[[:>:]]/var(--space-7-5)/g' \
+  -e 's/[[:<:]]2\.25rem[[:>:]]/var(--space-9)/g' \
+  -e 's/[[:<:]]2\.75rem[[:>:]]/var(--space-11)/g' \
+  -e 's/[[:<:]]3\.25rem[[:>:]]/var(--space-13)/g' \
+  -e 's/[[:<:]]3\.5rem[[:>:]]/var(--space-14)/g' \
+  -e 's/[[:<:]]3\.75rem[[:>:]]/var(--space-15)/g' \
+  -e 's/[[:<:]]4\.5rem[[:>:]]/var(--space-18)/g' \
+  -e 's/[[:<:]]7rem[[:>:]]/var(--space-28)/g' \
+  -e 's/[[:<:]]10rem[[:>:]]/var(--space-40)/g' \
+  -e 's/[[:<:]]12rem[[:>:]]/var(--space-48)/g' \
+  -e 's/[[:<:]]16rem[[:>:]]/var(--space-64)/g' \
+  -e 's/[[:<:]]20rem[[:>:]]/var(--space-80)/g' \
+  -e 's/[[:<:]]24rem[[:>:]]/var(--space-96)/g' \
+  -e 's/[[:<:]]28rem[[:>:]]/var(--space-112)/g' \
+  -e 's/[[:<:]]32rem[[:>:]]/var(--space-128)/g' \
+  -e 's/[[:<:]]36rem[[:>:]]/var(--space-144)/g' \
+  -e 's/[[:<:]]42rem[[:>:]]/var(--space-168)/g' \
+  -e 's/[[:<:]]48rem[[:>:]]/var(--space-192)/g' \
+  -e 's/[[:<:]]56rem[[:>:]]/var(--space-224)/g' \
+  -e 's/[[:<:]]64rem[[:>:]]/var(--space-256)/g' \
+  -e 's/[[:<:]]0px[[:>:]]/var(--border-width-0)/g' \
+  -e 's/[[:<:]]1px[[:>:]]/var(--border-width-1)/g' \
+  -e 's/[[:<:]]2px[[:>:]]/var(--border-width-2)/g' \
+  -e 's/[[:<:]]3px[[:>:]]/var(--border-width-3)/g' \
+  -e 's/[[:<:]]4px[[:>:]]/var(--border-width-4)/g' \
+  -e 's/[[:<:]]10px[[:>:]]/var(--size-10px)/g' \
+  -e 's/[[:<:]]14px[[:>:]]/var(--size-14px)/g' \
+  -e 's/[[:<:]]15px[[:>:]]/var(--size-15px)/g' \
+  -e 's/[[:<:]]20px[[:>:]]/var(--size-20px)/g' \
+  -e 's/[[:<:]]40px[[:>:]]/var(--size-40px)/g' \
+  -e 's/[[:<:]]48px[[:>:]]/var(--size-48px)/g' \
+  -e 's/[[:<:]]60px[[:>:]]/var(--size-60px)/g' \
+  -e 's/[[:<:]]96px[[:>:]]/var(--size-96px)/g' \
+  -e 's/[[:<:]]100px[[:>:]]/var(--size-100px)/g' \
+  -e 's/[[:<:]]158px[[:>:]]/var(--size-158px)/g' \
+  -e 's/[[:<:]]360px[[:>:]]/var(--size-360px)/g' \
+  -e 's/[[:<:]]580px[[:>:]]/var(--size-580px)/g' \
+  -e 's/[[:<:]]720px[[:>:]]/var(--size-720px)/g' \
+  -e 's/[[:<:]]9999px[[:>:]]/var(--radius-full)/g' \
+  -e 's|hsl\(0 0% 100% / 0\.4\)|var(--color-hsl-1)|g' \
+  -e 's|hsl\(0 0% 100% / 0\.5\)|var(--color-hsl-2)|g' \
+  -e 's|hsl\(0 60% 70%\)|var(--color-hsl-3)|g' \
+  -e 's|hsl\(0 72% 42% / 0\.07\)|var(--color-hsl-4)|g' \
+  -e 's|hsl\(0, 72%, 42% / 0\.35\)|var(--color-hsl-5)|g' \
+  -e 's|hsl\(142 50% 70%\)|var(--color-hsl-6)|g' \
+  -e 's|hsl\(220, 15%, 13%\)|var(--color-hsl-7)|g' \
+  -e 's|hsl\(220, 20%, 18%\)|var(--color-hsl-8)|g' \
+  -e 's|hsl\(30 30% 97%\)|var(--color-hsl-9)|g' \
+  -e 's|hsl\(38 55% 48% / 0\.12\)|var(--color-hsl-10)|g' \
+  -e 's|hsl\(38 55% 48%\)|var(--color-hsl-11)|g' \
+  -e 's|hsl\(38 65% 72%\)|var(--color-hsl-12)|g' \
+  -e 's|hsl\(38 70% 38%\)|var(--color-hsl-13)|g' \
+  -e 's|hsl\(38, 32%, 18%\)|var(--color-hsl-14)|g' \
+  -e 's|hsl\(38, 55%, 62%\)|var(--color-hsl-15)|g' \
+  -e 's|hsl\(38, 60%, 30% / 0\.4\)|var(--color-hsl-16)|g' \
+  -e 's|hsl\(40, 70%, 78%\)|var(--color-hsl-17)|g' \
+  -e 's|hsl\(42 60% 55%\)|var(--color-hsl-18)|g' \
+  -e 's|rgb\(0 0 0 / 0\.05\)|var(--color-rgb-1)|g' \
+  -e 's|rgb\(0 0 0 / 0\.1\)|var(--color-rgb-2)|g' \
+  -e 's|rgb\(0 0 0 / 0\.4\)|var(--color-rgb-3)|g' \
+  -e 's|rgb\(255 255 255 / 0\.1\)|var(--color-rgb-4)|g' \
+  -e 's|rgb\(255 255 255 / 0\.2\)|var(--color-rgb-5)|g' \
+  -e 's|rgb\(255 255 255 / 0\.5\)|var(--color-rgb-6)|g' \
+  -e 's|rgb\(255 255 255 / 0\.7\)|var(--color-rgb-7)|g' \
+  -e 's|rgb\(255 255 255 / 0\.8\)|var(--color-rgb-8)|g' \
+  {} +

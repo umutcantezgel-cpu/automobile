@@ -1,0 +1,6 @@
+- Started task to refactor tailwind utility classes in `src/app/admin/fahrzeuge/[id]/page.tsx`.
+- Removed `className="relative"` and `className="btn btn-ghost btn-sm self-start"` from `src/app/admin/fahrzeuge/[id]/page.tsx`.
+- Created `.powerWrapper` and `.addHistoryBtn` in `src/app/admin/fahrzeuge/[id]/fahrzeug-detail.module.css`.
+- Removed unused `.relative` from `src/app/admin/fahrzeuge/[id]/fahrzeug-detail.module.css`.
+- `npm run build` succeeded.
+- Last visited: 2026-06-05T01:19Z

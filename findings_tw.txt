@@ -1,0 +1,35 @@
+src/app/ueber-uns/page.tsx:203:            <h2 className="text-h1">Unser Weg</h2>
+src/app/ueber-uns/page.tsx:286:            <h2 className="text-h1">Wofür wir stehen</h2>
+src/app/ueber-uns/page.tsx:331:            <h2 className="text-h1">Die Menschen hinter Apex</h2>
+src/app/ueber-uns/page.tsx:357:                  <h4 className="text-h4">{member.name}</h4>
+src/app/magazin/page.tsx:60:              <div className="veh-img-grid" />
+src/app/magazin/page.tsx:96:                  <div className="veh-img-grid" />
+src/app/kontakt/page.tsx:264:                className="select-field"
+src/app/preise/page.tsx:912:            <h2 className="text-h2">Wählen Sie Ihre Stufe</h2>
+src/app/preise/page.tsx:1352:            <h2 className="text-h2">Alles Wichtige auf einen Blick</h2>
+src/app/fahrzeuge/[id]/page.tsx:117:        <div className="veh-img-grid" />
+src/app/fahrzeuge/[id]/page.tsx:324:                  <h2 id="similar-heading" className="text-h3">
+src/app/fahrzeuge/page.tsx:170:              <h1 className="text-h1">Fahrzeuge</h1>
+src/app/vergleich/page.tsx:262:                      <div className="veh-img-grid" />
+src/app/admin/fahrzeuge/[id]/page.tsx:279:                className="select-field"
+src/app/admin/fahrzeuge/[id]/page.tsx:351:              <div className="relative">
+src/app/admin/fahrzeuge/[id]/page.tsx:373:                className="select-field"
+src/app/admin/fahrzeuge/[id]/page.tsx:389:                className="select-field"
+src/app/admin/fahrzeuge/[id]/page.tsx:405:                className="select-field"
+src/app/admin/fahrzeuge/[id]/page.tsx:733:            className="btn btn-ghost btn-sm self-start"
+src/app/admin/fahrzeuge/[id]/page.tsx:882:              <div className="veh-img-grid" />
+src/app/service/page.tsx:188:            <h2 className="text-h1">Alles aus einer Hand.</h2>
+src/app/service/page.tsx:266:            <h2 className="text-h1">Termin vereinbaren</h2>
+src/app/service/page.tsx:394:            <h2 className="text-h1">Die Werkstatt-Crew</h2>
+src/app/probefahrt/page.tsx:181:                              <div className="veh-img-grid" />
+src/app/probefahrt/page.tsx:438:                <div className="veh-img-grid" />
+src/app/page.tsx:38:          <div className="veh-img-grid" />
+src/components/sections/hero.tsx:54:    <h1 className="text-display">
+src/components/sections/buying-card.tsx:109:          <span className="badge-top-listing">
+src/components/sections/magazine-gallery.tsx:169:                <div className="veh-img-grid" />
+src/components/sections/magazine-gallery.tsx:275:                <div className="veh-img-grid" />
+src/components/sections/filter-sidebar.tsx:344:                className="sticky-none"
+src/components/sections/vehicle-card.tsx:46:      <span className="badge-top-listing">
+src/components/sections/vehicle-card.tsx:104:              <div className="veh-img-grid" />
+src/components/sections/vehicle-card.tsx:226:            <div className="veh-img-grid" />
+src/components/sections/dealer-signals.tsx:30:        <div className="dealer-avatar" aria-hidden="true">
