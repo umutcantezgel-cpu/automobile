@@ -233,7 +233,7 @@ function DonutChart({
         <span className="text-3xl font-display font-bold text-neutral-900">
           {total > 0 ? fmtPct(Math.min(total, 100), 0).replace(',00', '') : '0 %'}
         </span>
-        <span className="text-xs font-semibold text-neutral-500 uppercase tracking-wider">Gesamtverlust</span>
+        <span className="text-xs font-semibold text-neutral-500 uppercase tracking-wider">Verlorene Kunden</span>
       </div>
     </div>
   );
@@ -439,8 +439,8 @@ export default function CalculatorPage() {
     const { loadLoss, mobileLoss, seoLoss, trustLoss } = lossFactors;
     return [
       { label: 'Ladezeit', value: loadLoss, color: LOSS_SEGMENTS[0].color },
-      { label: 'Mobil', value: mobileLoss, color: LOSS_SEGMENTS[1].color },
-      { label: 'SEO', value: seoLoss, color: LOSS_SEGMENTS[2].color },
+      { label: 'Handy', value: mobileLoss, color: LOSS_SEGMENTS[1].color },
+      { label: 'Google', value: seoLoss, color: LOSS_SEGMENTS[2].color },
       { label: 'Vertrauen', value: trustLoss, color: LOSS_SEGMENTS[3].color },
     ];
   }, [lossFactors]);
@@ -453,8 +453,8 @@ export default function CalculatorPage() {
       wins.push({
         icon: <Zap className="w-5 h-5 text-red-600" />,
         title: 'Ladezeit optimieren',
-        description: `Ihre Ladezeit von ${loadTime.toFixed(1).replace('.', ',')}s kostet Sie ca. ${fmtPct(lossFactors.loadLoss, 0)} Conversion. Ziel: unter 2s.`,
-        impact: `+${Math.round(lossFactors.loadLoss)}% Conv.`,
+        description: `Ihre Ladezeit von ${loadTime.toFixed(1).replace('.', ',')} Sekunden verschreckt Kunden, bevor die Seite überhaupt anzeigt wird. Ziel: unter 2 Sekunden.`,
+        impact: `+${Math.round(lossFactors.loadLoss)}% Kunden`,
         badge: 'Hoch',
       });
     }
@@ -462,9 +462,9 @@ export default function CalculatorPage() {
     if (mobileScore < 70) {
       wins.push({
         icon: <Smartphone className="w-5 h-5 text-red-600" />,
-        title: 'Mobile Experience verbessern',
-        description: `Ein Mobile-Score von ${mobileScore}/100 bedeutet, dass über 60% Ihrer Besucher eine schlechte Erfahrung haben.`,
-        impact: `+${Math.round(lossFactors.mobileLoss)}% Conv.`,
+        title: 'Handy-Ansicht verbessern',
+        description: `Ihre Webseite ist auf Handys schwer zu bedienen. Über 60% Ihrer Besucher schauen auf dem Handy und brechen frustriert ab.`,
+        impact: `+${Math.round(lossFactors.mobileLoss)}% Kunden`,
         badge: 'Kritisch',
       });
     }
@@ -472,9 +472,9 @@ export default function CalculatorPage() {
     if (googlePosition > 5) {
       wins.push({
         icon: <Search className="w-5 h-5 text-red-600" />,
-        title: 'SEO-Position verbessern',
-        description: `Position ${googlePosition} auf Google bedeutet, dass nur ~${Math.max(1, Math.round(30 / googlePosition))}% der Suchenden Ihre Seite sehen.`,
-        impact: `+${Math.round(lossFactors.seoLoss)}% Sichtbarkeit`,
+        title: 'Auf Google weiter oben stehen',
+        description: `Auf Position ${googlePosition} bei Google klickt fast niemand mehr auf Ihre Seite. Nur wer oben steht, bekommt die Anfragen.`,
+        impact: `+${Math.round(lossFactors.seoLoss)}% Kunden`,
         badge: 'Mittel',
       });
     }
@@ -482,8 +482,8 @@ export default function CalculatorPage() {
     if (trustSignals < 5) {
       wins.push({
         icon: <ShieldCheck className="w-5 h-5 text-red-600" />,
-        title: 'Vertrauenssignale hinzufügen',
-        description: `Sie nutzen nur ${trustSignals} von 8 möglichen Trust-Elementen. Bewertungen, Zertifikate und Garantien steigern die Conversion.`,
+        title: 'Vertrauen aufbauen',
+        description: `Es fehlen wichtige Vertrauenspunkte (wie Google-Bewertungen oder Garantie-Siegel). Kunden kaufen nur dort, wo sie sich sicher fühlen.`,
         impact: `+${Math.round(lossFactors.trustLoss)}% Vertrauen`,
         badge: 'Einfach',
       });
@@ -492,10 +492,10 @@ export default function CalculatorPage() {
     if (currentConversion < 2) {
       wins.push({
         icon: <Target className="w-5 h-5 text-red-600" />,
-        title: 'Conversion-Rate verdoppeln',
-        description: `Ihre aktuelle Rate von ${fmtPct(currentConversion)} liegt deutlich unter dem Branchendurchschnitt von 4%. Gezielte CTA-Optimierung kann das ändern.`,
+        title: 'Aus Besuchern Käufer machen',
+        description: `Ihre aktuelle Anfragen-Quote von ${fmtPct(currentConversion)} ist zu niedrig. Im Durchschnitt sollten 4 von 100 Besuchern anfragen. Das lässt sich durch bessere Texte ändern.`,
         impact: `${fmtEur(calculations.monthlyLoss)}/Mon.`,
-        badge: 'ROI',
+        badge: 'Wichtig',
       });
     }
 
@@ -507,7 +507,7 @@ export default function CalculatorPage() {
     min: 200,
     max: 120000,
     step: 100,
-    label: 'Ø Auftragswert',
+    label: 'Ø Fahrzeug-Preis',
     unit: '€',
     formatValue: (v) => fmtEur(v),
   };
@@ -534,7 +534,7 @@ export default function CalculatorPage() {
     min: 0.5,
     max: 12,
     step: 0.1,
-    label: 'Ladezeit (Sekunden)',
+    label: 'Ladezeit',
     unit: 's',
     formatValue: (v) => `${v.toFixed(1).replace('.', ',')} s`,
   };
@@ -543,25 +543,25 @@ export default function CalculatorPage() {
     min: 0,
     max: 100,
     step: 1,
-    label: 'Mobile Score',
+    label: 'Handy-Bedienbarkeit',
     unit: '/100',
-    formatValue: (v) => `${v}/100`,
+    formatValue: (v) => `${v}% gut`,
   };
 
   const googlePosSlider: SliderConfig = {
     min: 1,
     max: 100,
     step: 1,
-    label: 'Google-Position (Hauptkeyword)',
+    label: 'Google-Platzierung',
     unit: '',
-    formatValue: (v) => `Position ${v}`,
+    formatValue: (v) => `Platz ${v}`,
   };
 
   const trustSlider: SliderConfig = {
     min: 0,
     max: 8,
     step: 1,
-    label: 'Vertrauenssignale',
+    label: 'Sichtbare Bewertungen',
     unit: '/8',
     formatValue: (v) => `${v} von 8`,
   };
@@ -654,13 +654,13 @@ export default function CalculatorPage() {
                   {/* Derived conversion display */}
                   <div className="bg-neutral-50 rounded-xl p-5 border border-neutral-100 flex flex-col gap-4 mt-2">
                     <div className="flex justify-between items-center">
-                      <span className="text-sm font-semibold text-neutral-600">Aktuelle Conversion-Rate</span>
+                      <span className="text-sm font-semibold text-neutral-600">Aktuelle Anfragen-Quote</span>
                       <span className={cn("text-xl font-bold px-3 py-1 rounded-md", currentConversion >= TARGET_CONVERSION ? "bg-green-100 text-green-700" : "bg-red-100 text-red-700")}>
                         {fmtPct(currentConversion)}
                       </span>
                     </div>
                     <div className="flex justify-between items-center pt-4 border-t border-neutral-200/50">
-                      <span className="text-sm font-semibold text-neutral-500">Branchen-Benchmark</span>
+                      <span className="text-sm font-semibold text-neutral-500">Normal für gute Autohäuser</span>
                       <span className="text-sm font-bold text-neutral-700">{fmtPct(TARGET_CONVERSION)}</span>
                     </div>
                   </div>
@@ -699,7 +699,7 @@ export default function CalculatorPage() {
                         ? <TrendingUp className="w-6 h-6" />
                         : <TrendingDown className="w-6 h-6" />}
                     </span>
-                    <span className="text-xs font-semibold uppercase tracking-wider text-neutral-500">Conversion</span>
+                    <span className="text-xs font-semibold uppercase tracking-wider text-neutral-500">Quote</span>
                   </div>
                   <p className={cn("text-3xl font-display font-bold m-0", currentConversion >= TARGET_CONVERSION ? "text-green-600" : "text-red-600")}>
                     {fmtPct(currentConversion)}
@@ -772,7 +772,7 @@ export default function CalculatorPage() {
               <div className="bg-white rounded-[2rem] p-8 lg:p-10 shadow-sm border border-neutral-200/50">
                 <h3 className="font-display text-2xl font-bold text-neutral-900 flex items-center gap-3 mb-8">
                   <Target className="w-6 h-6 text-red-600" />
-                  Verlustquellen-Analyse
+                  Warum verliere ich Kunden?
                 </h3>
                 <div className="flex flex-col md:flex-row items-center justify-between gap-12 lg:gap-16">
                   <DonutChart segments={donutSegments} />
@@ -890,8 +890,8 @@ export default function CalculatorPage() {
                       {fmtEur(calculations.yearlyLoss)}
                     </p>
                     <p className="text-neutral-400 text-lg m-0 max-w-md leading-relaxed">
-                      entgangener Umsatz pro Jahr — bei einer Conversion-Optimierung auf{' '}
-                      <span className="text-white font-bold bg-white/10 px-2 py-0.5 rounded ml-1">{fmtPct(TARGET_CONVERSION)}</span>.
+                      entgangener Umsatz pro Jahr — wenn wir Ihre Anfragen-Quote auf{' '}
+                      <span className="text-white font-bold bg-white/10 px-2 py-0.5 rounded ml-1">{fmtPct(TARGET_CONVERSION)}</span> verbessern.
                     </p>
                   </div>
                   <div className="flex flex-col gap-3 shrink-0 w-full md:w-auto">
