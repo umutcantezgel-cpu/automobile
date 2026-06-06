@@ -31,7 +31,7 @@ function AnimatedHeadline() {
   const words = text.split(' ');
 
   return (
-    <h1 className="font-display text-5xl md:text-7xl lg:text-[5.5rem] font-bold tracking-tight text-white leading-[1.05] mb-6">
+    <h1 className="font-display text-5xl md:text-6xl lg:text-[5.5rem] font-bold tracking-tight text-white leading-[1.05] mb-6">
       {words.map((word, i) => (
         <motion.span
           key={`${word}-${i}`}
@@ -101,7 +101,7 @@ export function Hero() {
 
       {/* Content Wrapper */}
       <motion.div
-        className="relative z-10 flex h-full w-full items-end pb-24 pt-48"
+        className="relative z-10 flex h-full w-full items-center lg:items-end pb-32 md:pb-40 lg:pb-24 pt-32 lg:pt-48"
         style={{ opacity: contentOpacity, y: contentY }}
       >
         <div className="max-w-[1400px] mx-auto px-4 md:px-8 w-full">

@@ -385,80 +385,90 @@ export function SiteHeader() {
         </AnimatePresence>
       </header>
 
-      {/* Mobile Drawer */}
+      {/* Mobile Menu */}
       <AnimatePresence>
         {mobileMenuOpen && (
-          <>
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              className="fixed inset-0 bg-neutral-900/40 backdrop-blur-sm z-40 lg:hidden"
-              onClick={() => setMobileMenuOpen(false)}
-            />
-            <motion.div
-              initial={{ x: '100%' }}
-              animate={{ x: 0 }}
-              exit={{ x: '100%' }}
-              transition={{ type: 'spring', damping: 30, stiffness: 300 }}
-              className="fixed inset-y-0 right-0 w-full max-w-sm bg-white shadow-2xl z-50 flex flex-col lg:hidden"
-            >
-              <div className="flex items-center justify-between px-6 h-20 border-b border-neutral-100">
-                <Link href="/" className="font-display font-bold tracking-tight text-xl text-neutral-900" onClick={() => setMobileMenuOpen(false)}>
-                  APEX <span className="text-red-600 font-light">/</span> MOTORS
-                </Link>
-                <button type="button" onClick={() => setMobileMenuOpen(false)} className="w-10 h-10 flex items-center justify-center rounded-full bg-neutral-100 text-neutral-900">
-                  <X className="w-5 h-5" />
-                </button>
-              </div>
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.3 }}
+            className="fixed inset-0 bg-neutral-950 z-50 lg:hidden flex flex-col"
+          >
+            {/* Header */}
+            <div className="flex items-center justify-between px-4 md:px-8 h-20 md:h-24 border-b border-white/10 shrink-0">
+              <Link href="/" className="font-display font-bold tracking-tight text-xl text-white" onClick={() => setMobileMenuOpen(false)}>
+                APEX <span className="text-red-500 font-light">/</span> MOTORS
+              </Link>
+              <button 
+                type="button" 
+                onClick={() => setMobileMenuOpen(false)} 
+                className="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 text-white hover:bg-white/20 transition-colors"
+              >
+                <X className="w-5 h-5" />
+              </button>
+            </div>
 
-              {/* Mobile Tab Switcher */}
-              <div className="flex bg-neutral-100 p-1 mx-4 mt-4 rounded-xl">
-                <button
-                  onClick={() => setMobileTab('b2c')}
-                  className={cn("flex-1 py-2 text-sm font-semibold rounded-lg transition-all", mobileTab === 'b2c' ? "bg-white text-black shadow-sm" : "text-neutral-500")}
+            {/* Content Area */}
+            <div className="flex-1 overflow-y-auto overflow-x-hidden pt-6 pb-32">
+              <div className="px-4 md:px-8">
+                
+                {/* Tab Switcher */}
+                <motion.div 
+                  initial={{ y: 20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 0.1 }}
+                  className="flex bg-white/5 p-1 rounded-xl mb-10"
                 >
-                  Autokäufer
-                </button>
-                <button
-                  onClick={() => setMobileTab('b2b')}
-                  className={cn("flex-1 py-2 text-sm font-semibold rounded-lg transition-all", mobileTab === 'b2b' ? "bg-white text-black shadow-sm" : "text-neutral-500")}
-                >
-                  Autohändler
-                </button>
-              </div>
+                  <button
+                    onClick={() => setMobileTab('b2c')}
+                    className={cn("flex-1 py-2.5 text-sm font-semibold rounded-lg transition-all", mobileTab === 'b2c' ? "bg-white text-black shadow-sm" : "text-neutral-400")}
+                  >
+                    Für Autokäufer
+                  </button>
+                  <button
+                    onClick={() => setMobileTab('b2b')}
+                    className={cn("flex-1 py-2.5 text-sm font-semibold rounded-lg transition-all", mobileTab === 'b2b' ? "bg-red-600 text-white shadow-sm" : "text-neutral-400")}
+                  >
+                    Für Autohändler
+                  </button>
+                </motion.div>
 
-              <div className="flex-1 overflow-y-auto pb-24 mt-4">
-                <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 p-4 pt-0">
+                {/* Quick Actions Grid */}
+                <motion.div 
+                  initial={{ y: 20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 0.15 }}
+                  className="grid grid-cols-2 gap-3 mb-10"
+                >
                   {(mobileTab === 'b2c' ? MOBILE_QUICK_ACTIONS_B2C : MOBILE_QUICK_ACTIONS_B2B).map((action) => (
                     <Link
                       key={action.href}
                       href={action.href}
                       onClick={() => setMobileMenuOpen(false)}
-                      className="flex flex-col items-center gap-2 p-3 rounded-xl hover:bg-neutral-50 transition-colors text-center"
+                      className="flex flex-col items-center justify-center gap-3 p-5 rounded-2xl bg-white/5 border border-white/5 hover:bg-white/10 transition-colors text-center"
                     >
-                      <div className="w-10 h-10 rounded-full bg-neutral-100 flex items-center justify-center text-neutral-600">
+                      <div className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center text-white">
                         {action.icon}
                       </div>
-                      <span className="text-[11px] font-semibold text-neutral-600">{action.label}</span>
+                      <span className="text-sm font-medium text-neutral-300">{action.label}</span>
                     </Link>
                   ))}
-                </div>
+                </motion.div>
 
-                <div className="h-2 bg-neutral-50" />
-
-                <div className="px-4 py-2">
-                  {(mobileTab === 'b2c' ? NAV_GROUPS_B2C : NAV_GROUPS_B2B).map((group) => {
+                {/* Navigation Links */}
+                <div className="space-y-2">
+                  {(mobileTab === 'b2c' ? NAV_GROUPS_B2C : NAV_GROUPS_B2B).map((group, i) => {
                     const isOpen = mobileAccordion === group.key;
                     return (
-                      <div key={group.key} className="border-b border-neutral-100 last:border-0">
+                      <motion.div 
+                        key={group.key}
+                        initial={{ y: 20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 0.2 + (i * 0.05) }}
+                        className="border-b border-white/10 last:border-0"
+                      >
                         <button
                           type="button"
-                          className="flex items-center justify-between w-full py-4 text-left font-medium text-neutral-900"
+                          className="flex items-center justify-between w-full py-5 text-left font-display text-2xl font-bold text-white"
                           onClick={() => toggleAccordion(group.key)}
                         >
                           {group.label}
-                          <ChevronDown className={cn("w-5 h-5 text-neutral-400 transition-transform duration-300", isOpen && "rotate-180")} />
+                          <ChevronDown className={cn("w-6 h-6 text-neutral-500 transition-transform duration-300", isOpen && "rotate-180")} />
                         </button>
                         <AnimatePresence>
                           {isOpen && (
@@ -468,20 +478,22 @@ export function SiteHeader() {
                               exit={{ height: 0, opacity: 0 }}
                               className="overflow-hidden"
                             >
-                              <div className="pb-4 space-y-6">
+                              <div className="pb-6 pt-2 space-y-8">
                                 {group.columns.map((col) => (
                                   <div key={col.title}>
-                                    <h4 className="text-xs font-semibold text-neutral-400 uppercase tracking-wider mb-3 px-2">{col.title}</h4>
-                                    <ul className="space-y-1">
+                                    <h4 className="text-xs font-bold text-neutral-500 uppercase tracking-widest mb-4 px-2">{col.title}</h4>
+                                    <ul className="space-y-2">
                                       {col.items.map((item) => (
                                         <li key={item.href}>
                                           <Link
                                             href={item.href}
                                             onClick={() => setMobileMenuOpen(false)}
-                                            className="flex items-center gap-3 px-2 py-2 rounded-lg hover:bg-neutral-50"
+                                            className="flex items-center gap-4 px-2 py-3 rounded-xl hover:bg-white/5 transition-colors group"
                                           >
-                                            <div className="text-neutral-400">{item.icon}</div>
-                                            <span className="text-sm font-medium text-neutral-700">{item.label}</span>
+                                            <div className="text-neutral-400 group-hover:text-red-500 transition-colors">{item.icon}</div>
+                                            <div>
+                                              <div className="text-base font-medium text-neutral-200 group-hover:text-white transition-colors">{item.label}</div>
+                                            </div>
                                           </Link>
                                         </li>
                                       ))}
@@ -492,37 +504,37 @@ export function SiteHeader() {
                             </motion.div>
                           )}
                         </AnimatePresence>
-                      </div>
+                      </motion.div>
                     );
                   })}
                 </div>
-              </div>
 
+              </div>
+            </div>
+
+            {/* Bottom Sticky Action */}
+            <div className="absolute bottom-0 left-0 w-full bg-neutral-950/80 backdrop-blur-xl border-t border-white/10 p-4 md:p-6 pb-8">
               {mobileTab === 'b2c' ? (
-                <div className="absolute bottom-0 left-0 w-full bg-white border-t border-neutral-100 p-4 shadow-[0_-4px_20px_rgba(0,0,0,0.05)]">
-                  <Link
-                    href="/probefahrt"
-                    onClick={() => setMobileMenuOpen(false)}
-                    className="w-full flex items-center justify-center gap-2 rounded-xl bg-red-600 py-3.5 text-sm font-semibold text-white transition-all hover:bg-red-700"
-                  >
-                    <Calendar className="w-4 h-4" />
-                    Probefahrt vereinbaren
-                  </Link>
-                </div>
+                <Link
+                  href="/probefahrt"
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="w-full flex items-center justify-center gap-2 rounded-xl bg-red-600 py-4 text-base font-bold text-white transition-all hover:bg-red-700"
+                >
+                  <Calendar className="w-5 h-5" />
+                  Probefahrt vereinbaren
+                </Link>
               ) : (
-                <div className="absolute bottom-0 left-0 w-full bg-white border-t border-neutral-100 p-4 shadow-[0_-4px_20px_rgba(0,0,0,0.05)]">
-                  <Link
-                    href="/kontakt"
-                    onClick={() => setMobileMenuOpen(false)}
-                    className="w-full flex items-center justify-center gap-2 rounded-xl bg-neutral-900 py-3.5 text-sm font-semibold text-white transition-all hover:bg-neutral-800"
-                  >
-                    <Phone className="w-4 h-4" />
-                    Strategiegespräch buchen
-                  </Link>
-                </div>
+                <Link
+                  href="/kontakt"
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="w-full flex items-center justify-center gap-2 rounded-xl bg-white py-4 text-base font-bold text-neutral-900 transition-all hover:bg-neutral-100"
+                >
+                  <Phone className="w-5 h-5" />
+                  Strategiegespräch buchen
+                </Link>
               )}
-            </motion.div>
-          </>
+            </div>
+          </motion.div>
         )}
       </AnimatePresence>
     </>
