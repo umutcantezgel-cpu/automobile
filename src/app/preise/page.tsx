@@ -142,7 +142,7 @@ const TIERS: PricingTier[] = [
     badge: 'Stufe 01',
     badgeVariant: 'default',
     name: 'Digitales Autohaus Basis',
-    priceRange: '2.900 – 5.400 €',
+    priceRange: '4.950 – 7.500 €',
     priceNote: 'Einmalige Investition',
     timeline: '3–5 Wochen',
     iterations: '2 Entwurfsrunden',
@@ -481,7 +481,7 @@ const CASE_STUDIES: CaseStudy[] = [
     stats: [
       { label: 'Sichtbarkeit bei Google', value: '+180%' },
       { label: 'Probefahrten/Monat', value: '+12' },
-      { label: 'Einmalige Kosten', value: '4.200 €' },
+      { label: 'Einmalige Kosten', value: '5.400 €' },
     ],
     description:
       'Vom alten Baukasten zur modernen Webseite. Innerhalb von 4 Wochen online mit 6 klaren Seiten und Buchungs-Formular für Probefahrten.',
