@@ -41,6 +41,19 @@ export const metadata: Metadata = {
   title: 'Apex Motors — Premium-Fahrzeuge in Wetzlar',
   description:
     'Entdecken Sie handverlesene Premium-Fahrzeuge bei Apex Motors in Wetzlar. Gebrauchtwagen mit Garantie, Finanzierung und erstklassigem Service seit 1986.',
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+    googleBot: {
+      index: true,
+      follow: true,
+      noimageindex: false,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
 };
 
 /* ------------------------------------------------------------------ */
