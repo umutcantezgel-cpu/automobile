@@ -142,13 +142,13 @@ const TIERS: PricingTier[] = [
     badge: 'Stufe 01',
     badgeVariant: 'default',
     name: 'Digitales Autohaus Basis',
-    priceRange: '1.450 – 2.700 €',
-    priceNote: 'Einmalig · Festpreis',
+    priceRange: '2.900 – 5.400 €',
+    priceNote: 'Einmalige Investition',
     timeline: '3–5 Wochen',
     iterations: '2 Entwurfsrunden',
     pages: '5–8 Seiten',
     description:
-      'Ihre professionelle Online-Filiale. Keine Standard-Website, sondern ein System speziell für Autohändler, das Vertrauen schafft und Anfragen bringt.',
+      'Ihre professionelle Online-Filiale. Ein vollwertiges Vertriebswerkzeug, das sich durch neue Kundenanfragen bereits in wenigen Monaten von selbst bezahlt macht.',
     featured: false,
     modules: [
       {
@@ -208,13 +208,13 @@ const TIERS: PricingTier[] = [
     badge: 'Stufe 02 · Empfohlen',
     badgeVariant: 'premium',
     name: 'Profi-Händler',
-    priceRange: '4.450 – 9.250 €',
-    priceNote: 'Einmalig · Festpreis',
+    priceRange: '8.900 – 18.500 €',
+    priceNote: 'Einmalige Investition',
     timeline: '6–10 Wochen',
     iterations: 'Unbegrenzte Anpassungen',
     pages: '15–30 Seiten',
     description:
-      'Die komplette Verkaufsmaschine. Autos werden automatisch importiert, smarte Rechner helfen beim Verkauf und Sie werden in Ihrer Region zur Nummer 1 bei Google.',
+      'Die komplette Verkaufsmaschine, die die Arbeit eines Vollzeit-Mitarbeiters übernimmt. Autos werden automatisch importiert und smarte Rechner helfen beim 24/7-Verkauf.',
     featured: true,
     modules: [
       {
@@ -275,13 +275,13 @@ const TIERS: PricingTier[] = [
     badge: 'Stufe 03 · Enterprise',
     badgeVariant: 'default',
     name: 'Mehrere Standorte',
-    priceRange: 'ab 17.500 €',
+    priceRange: 'ab 35.000 €',
     priceNote: 'Abrechnung nach Meilensteinen',
     timeline: 'Nach Absprache',
     iterations: 'Unbegrenzt',
     pages: 'Unbegrenzt',
     description:
-      'Für große Autohaus-Gruppen. Wir verbinden Ihre Systeme (wie Loco-Soft), bauen getrennte Bereiche für Filialen und automatisieren die Arbeit.',
+      'Ihre maßgeschneiderte IT-Infrastruktur. Wir digitalisieren und verbinden Ihre kompletten Autohaus-Prozesse, was Ihre Betriebskosten massiv senkt und Filialen verknüpft.',
     featured: false,
     modules: [
       {
@@ -342,55 +342,55 @@ const ADDONS: AddOn[] = [
   {
     icon: <Database size={20} />,
     name: 'Automatische Fahrzeug-Anbindung',
-    price: '1.000 – 2.000 €',
+    price: '2.000 – 4.000 €',
     description: 'Ihre Autos übertragen sich von alleine direkt aus Mobile.de oder AutoScout24 auf die Webseite.',
   },
   {
     icon: <Camera size={20} />,
     name: 'Autohaus Fotografie',
-    price: '600 – 1.400 €',
+    price: '1.200 – 2.800 €',
     description: 'Professionelles Foto-Shooting bei Ihnen vor Ort. Wir fotografieren Ihre Autos, das Team und das Gebäude.',
   },
   {
     icon: <Video size={20} />,
     name: 'Verkaufs-Videos',
-    price: '1.250 – 3.000 €',
+    price: '2.500 – 6.000 €',
     description: 'Hochwertiges Werbevideo für Ihr Autohaus oder Videos, die Ihre Autos von allen Seiten zeigen.',
   },
   {
     icon: <MessageSquare size={20} />,
     name: 'Künstliche Intelligenz für Anfragen',
-    price: '750 – 1.750 €',
+    price: '1.500 – 3.500 €',
     description: 'Ein Chat-Roboter, der Tag und Nacht Kundenfragen beantwortet und Termine für Sie ausmacht.',
   },
   {
     icon: <Share2 size={20} />,
     name: 'Werbung auf Social-Media',
-    price: '400 – 750 €',
+    price: '800 – 1.500 €',
     description: 'Wir richten Facebook & Instagram so für Sie ein, dass Sie Autos direkt an Leute aus der Umgebung verkaufen können.',
   },
   {
     icon: <Globe size={20} />,
     name: 'Mehrsprachige Webseite',
-    price: '750 – 1.500 €',
+    price: '1.500 – 3.000 €',
     description: 'Professionelle Übersetzung (kein billiges Google Translate) für Käufer aus dem Ausland.',
   },
   {
     icon: <Gauge size={20} />,
     name: 'Fehler- und Geschwindigkeits-Check',
-    price: '300 – 600 €',
+    price: '600 – 1.200 €',
     description: 'Wir prüfen, ob Ihre aktuelle Website Lade-Probleme hat, durch die Sie Kunden verlieren.',
   },
   {
     icon: <BarChart3 size={20} />,
     name: 'Google & Facebook Werbung',
-    price: '900 – 1.750 €',
+    price: '1.800 – 3.500 €',
     description: 'Wir schalten gezielt Anzeigen für Ihre Lagerfahrzeuge, damit diese schneller verkauft werden.',
   },
   {
     icon: <Shield size={20} />,
     name: 'Rundum-Sorglos-Wartung',
-    price: '100 – 250 €/Monat',
+    price: '200 – 500 €/Monat',
     description: 'Wir kümmern uns jeden Monat um alle Updates, Sicherheit und schnelle Hilfe, wenn es klemmt.',
   },
 ];
@@ -481,7 +481,7 @@ const CASE_STUDIES: CaseStudy[] = [
     stats: [
       { label: 'Sichtbarkeit bei Google', value: '+180%' },
       { label: 'Probefahrten/Monat', value: '+12' },
-      { label: 'Einmalige Kosten', value: '2.100 €' },
+      { label: 'Einmalige Kosten', value: '4.200 €' },
     ],
     description:
       'Vom alten Baukasten zur modernen Webseite. Innerhalb von 4 Wochen online mit 6 klaren Seiten und Buchungs-Formular für Probefahrten.',
@@ -762,13 +762,12 @@ export default function PreisePage() {
           >
             <p className="text-xs font-semibold uppercase tracking-wider text-red-500">// Investition · transparent kalkuliert</p>
             <h1 className="font-display text-4xl md:text-5xl lg:text-7xl font-bold tracking-tight text-white m-0">
-              Drei Stufen. Keine versteckten Kosten.
+              Umsatzmaschine statt Visitenkarte.
               <br />
-              <span className="text-red-500">Ehrlich kalkuliert.</span>
+              <span className="text-red-500">Ihre beste Investition.</span>
             </h1>
             <p className="text-lg md:text-xl text-neutral-300 m-0 max-w-2xl leading-relaxed">
-              Eine Website ist eine Investition — keine laufende Verpflichtung.
-              Sie sehen vor der Beauftragung, was Sie bekommen.
+              Sie kaufen keine generische Website. Sie erwerben eine maßgeschneiderte Verkaufs-Infrastruktur, die Ihnen rund um die Uhr Leads und bares Geld bringt. Qualität, die sich schnell selbst bezahlt macht.
             </p>
           </motion.div>
 
@@ -1119,7 +1118,7 @@ export default function PreisePage() {
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-neutral-900 m-0">Wo fließt Ihr Geld hin?</h2>
               <p className="text-lg text-neutral-500 m-0 leading-relaxed">
                 Beispielhafte Aufteilung für ein{' '}
-                <span className="font-bold text-neutral-900 bg-neutral-100 px-2 py-0.5 rounded">12.500 €</span>{' '}
+                <span className="font-bold text-neutral-900 bg-neutral-100 px-2 py-0.5 rounded">25.000 €</span>{' '}
                 Local-Dominance-Projekt:
               </p>
             </div>
@@ -1137,7 +1136,7 @@ export default function PreisePage() {
                   <div className="flex justify-between items-end text-sm">
                     <span className="font-bold text-neutral-900">{item.label}</span>
                     <span className="font-medium text-neutral-500">
-                      {new Intl.NumberFormat('de-DE').format(Math.round(12500 * item.percentage / 100))} €
+                      {new Intl.NumberFormat('de-DE').format(Math.round(25000 * item.percentage / 100))} €
                       <span className="ml-1 text-xs text-neutral-400">
                         (<span className="font-bold">{item.percentage}%</span>)
                       </span>
@@ -1157,7 +1156,7 @@ export default function PreisePage() {
               <div className="mt-4 pt-6 border-t border-neutral-200">
                 <div className="bg-neutral-900 text-white rounded-xl p-5 flex justify-between items-center shadow-lg">
                   <span className="font-bold uppercase tracking-wider text-sm">Gesamt</span>
-                  <span className="font-display text-2xl font-bold">12.500 €</span>
+                  <span className="font-display text-2xl font-bold">25.000 €</span>
                 </div>
               </div>
             </div>
