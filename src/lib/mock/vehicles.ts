@@ -361,8 +361,8 @@ export const DEALER: Dealer = {
   followers: 12480,
   staff: 15,
   hoursToday: 'Heute 9:00 – 19:00',
-  phone: '+49 6441 22 88-0',
-  email: 'hallo@apex-motors.de',
+  phone: '0176 41195301',
+  email: 'umut@codayweb.de',
 };
 
 export const PRICE_RATING_MAP: Record<string, PriceRatingMeta> = {

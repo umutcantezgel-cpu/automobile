@@ -9,6 +9,7 @@ import {
   Send,
   CheckCircle2,
   Clock,
+  Globe,
 } from 'lucide-react';
 import { cn } from '@/lib/cn';
 
@@ -24,9 +25,9 @@ interface ContactPill {
 }
 
 const PILLS: ContactPill[] = [
-  { icon: Phone, label: 'Anrufen', value: '+49 6441 22 88-0', href: 'tel:+4964412288' },
-  { icon: Mail, label: 'Schreiben', value: 'hallo@apex-motors.de', href: 'mailto:hallo@apex-motors.de' },
-  { icon: MapPin, label: 'Besuchen', value: 'Hermann-Löns-Str. 14', href: '#karte' },
+  { icon: Phone, label: 'Anrufen', value: '0176 41195301', href: 'tel:+4917641195301' },
+  { icon: Mail, label: 'Schreiben', value: 'umut@codayweb.de', href: 'mailto:umut@codayweb.de' },
+  { icon: Globe, label: 'Webseite', value: 'codayweb.de', href: 'https://codayweb.de' },
 ];
 
 const BETREFF_OPTIONS = [
@@ -204,8 +205,8 @@ export default function KontaktPage() {
             <div className="mt-auto p-6 rounded-2xl bg-neutral-50 border border-neutral-200 text-sm leading-relaxed text-neutral-600">
               <p>
                 Feiertage abweichend. Notdienst rund um die Uhr unter{' '}
-                <a href="tel:+4964410000" className="font-bold text-red-600 hover:text-red-700 hover:underline transition-all">
-                  +49 6441 0000
+                <a href="tel:+4917641195301" className="font-bold text-red-600 hover:text-red-700 hover:underline transition-all">
+                  0176 41195301
                 </a>
               </p>
             </div>

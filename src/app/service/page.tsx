@@ -237,11 +237,11 @@ export default function ServicePage() {
           </div>
 
           <a
-            href="tel:+4964410000"
+            href="tel:+4917641195301"
             className="relative z-10 inline-flex items-center justify-center gap-3 rounded-full bg-red-600 px-8 py-5 text-lg font-semibold text-white transition-all hover:bg-red-700 hover:shadow-xl hover:shadow-red-600/20 active:scale-95 whitespace-nowrap lg:w-auto w-full"
           >
             <Phone size={20} />
-            <span className="font-mono tracking-tight">+49 6441 0000</span>
+            <span className="font-mono tracking-tight">0176 41195301</span>
           </a>
         </motion.div>
       </section>
