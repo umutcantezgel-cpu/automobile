@@ -5,6 +5,7 @@ import type { ReactNode } from 'react';
 import { SiteHeader } from '@/components/sections/site-header';
 import { SiteFooter } from '@/components/sections/site-footer';
 import { MobileBottomNav } from '@/components/sections/mobile-bottom-nav';
+import { WhatsappButton } from '@/components/ui/whatsapp-button';
 
 import './globals.css';
 
@@ -81,6 +82,7 @@ export default function RootLayout({
         </main>
         <SiteFooter />
         <MobileBottomNav />
+        <WhatsappButton />
       </body>
     </html>
   );
