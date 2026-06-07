@@ -84,7 +84,7 @@ export function Hero() {
   const contentY = useTransform(scrollYProgress, [0, 0.6], [0, 100]);
 
   return (
-    <section ref={sectionRef} className="relative h-screen min-h-[800px] w-full overflow-hidden bg-neutral-950">
+    <section ref={sectionRef} className="relative min-h-[100dvh] md:min-h-[800px] w-full overflow-hidden bg-neutral-950 flex">
       
       {/* Background Image with Parallax */}
       <motion.div
@@ -101,7 +101,7 @@ export function Hero() {
 
       {/* Content Wrapper */}
       <motion.div
-        className="relative z-10 flex h-full w-full items-center lg:items-end pb-32 md:pb-40 lg:pb-24 pt-32 lg:pt-48"
+        className="relative z-10 flex flex-1 w-full items-center lg:items-end pb-36 md:pb-40 lg:pb-24 pt-32 lg:pt-48"
         style={{ opacity: contentOpacity, y: contentY }}
       >
         <div className="max-w-[1400px] mx-auto px-4 md:px-8 w-full">
@@ -161,7 +161,7 @@ export function Hero() {
             <motion.div
               variants={FADE_UP}
               transition={{ type: 'spring', stiffness: 100, damping: 20 }}
-              className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-8 border-t border-white/10 pt-10"
+              className="mt-12 md:mt-20 grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 border-t border-white/10 pt-8 md:pt-10"
             >
               {STATS.map((stat) => (
                 <div key={stat.label}>
