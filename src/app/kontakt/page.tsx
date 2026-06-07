@@ -1,13 +1,9 @@
 'use client';
 
-import { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 import {
   Phone,
   Mail,
-  MapPin,
-  Send,
-  CheckCircle2,
   Clock,
   Globe,
 } from 'lucide-react';
@@ -52,22 +48,8 @@ const HOURS: OpeningHour[] = [
 ];
 
 export default function KontaktPage() {
-  const [betreff, setBetreff] = useState('Allgemeine Anfrage');
-  const [name, setName] = useState('');
-  const [telefon, setTelefon] = useState('');
-  const [email, setEmail] = useState('');
-  const [nachricht, setNachricht] = useState('');
-  const [datenschutz, setDatenschutz] = useState(false);
-  const [submitted, setSubmitted] = useState(false);
-
   const fadeUp: any = { hidden: { opacity: 0, y: 28 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.16, 1, 0.3, 1] } } };
   const stagger = { hidden: {}, visible: { transition: { staggerChildren: 0.1 } } };
-
-  function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
-    e.preventDefault();
-    setSubmitted(true);
-    setTimeout(() => setSubmitted(false), 5000);
-  }
 
   return (
     <main className="min-h-screen bg-neutral-50 pb-20">
@@ -214,175 +196,6 @@ export default function KontaktPage() {
         </div>
       </section>
 
-      {/* ============================================================ */}
-      {/*  CONTACT FORM                                                */}
-      {/* ============================================================ */}
-      <section className="bg-white border-y border-neutral-200/60 py-24">
-        <div className="max-w-[1400px] mx-auto px-4 md:px-8 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-start">
-          <motion.div
-            initial={{ opacity: 0, x: -24 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true, margin: '-100px' }}
-            transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
-            className="w-full relative h-[400px] lg:h-full min-h-[600px] rounded-3xl overflow-hidden shadow-xl"
-          >
-            <img src="/images/kontakt_empfang.png" alt="Empfang" className="absolute inset-0 w-full h-full object-cover" />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
-            <div className="absolute bottom-8 left-8 right-8 text-white">
-              <h3 className="font-display text-3xl font-bold mb-2">Wir freuen uns auf Sie.</h3>
-              <p className="text-white/80 text-lg">Unser Team steht Ihnen für alle Fragen rund um Ihr neues Fahrzeug zur Verfügung.</p>
-            </div>
-          </motion.div>
-
-          <div className="flex flex-col w-full">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: '-100px' }}
-              transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
-              className="mb-12"
-            >
-              <p className="text-xs font-semibold uppercase tracking-wider text-red-600 mb-3 flex items-center gap-3">
-                <span className="w-8 h-[1px] bg-red-600" /> Nachricht
-              </p>
-              <h2 className="font-display text-4xl md:text-5xl font-bold tracking-tight text-neutral-900">Schreiben Sie uns</h2>
-            </motion.div>
-
-            <motion.form
-              initial={{ opacity: 0, y: 24 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: '-100px' }}
-              transition={{ duration: 0.6, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
-              onSubmit={handleSubmit}
-              className="relative flex flex-col gap-6 rounded-3xl bg-neutral-50 border border-neutral-200/60 p-6 md:p-10 shadow-sm w-full"
-            >
-            {/* Betreff */}
-            <div className="flex flex-col gap-2">
-              <label htmlFor="ct-betreff" className="text-[11px] font-bold uppercase tracking-wider text-neutral-500">
-                Betreff
-              </label>
-              <select
-                id="ct-betreff"
-                value={betreff}
-                onChange={(e) => setBetreff(e.target.value)}
-                className="w-full rounded-xl border border-neutral-200 bg-white px-4 py-3.5 text-[15px] font-medium text-neutral-900 outline-none transition-all focus:border-neutral-400 focus:ring-4 focus:ring-neutral-100 appearance-none"
-              >
-                {BETREFF_OPTIONS.map((opt) => (
-                  <option key={opt} value={opt}>
-                    {opt}
-                  </option>
-                ))}
-              </select>
-            </div>
-
-            {/* Name + Telefon */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-              <div className="flex flex-col gap-2">
-                <label htmlFor="ct-name" className="text-[11px] font-bold uppercase tracking-wider text-neutral-500">
-                  Name
-                </label>
-                <input
-                  id="ct-name"
-                  type="text"
-                  value={name}
-                  onChange={(e) => setName(e.target.value)}
-                  placeholder="Ihr vollständiger Name"
-                  className="w-full rounded-xl border border-neutral-200 bg-white px-4 py-3.5 text-[15px] text-neutral-900 outline-none transition-all placeholder:text-neutral-400 focus:border-neutral-400 focus:ring-4 focus:ring-neutral-100"
-                  required
-                />
-              </div>
-              <div className="flex flex-col gap-2">
-                <label htmlFor="ct-telefon" className="text-[11px] font-bold uppercase tracking-wider text-neutral-500">
-                  Telefon
-                </label>
-                <input
-                  id="ct-telefon"
-                  type="tel"
-                  value={telefon}
-                  onChange={(e) => setTelefon(e.target.value)}
-                  placeholder="+49 ..."
-                  className="w-full rounded-xl border border-neutral-200 bg-white px-4 py-3.5 text-[15px] text-neutral-900 font-mono outline-none transition-all placeholder:text-neutral-400 focus:border-neutral-400 focus:ring-4 focus:ring-neutral-100"
-                />
-              </div>
-            </div>
-
-            {/* E-Mail */}
-            <div className="flex flex-col gap-2">
-              <label htmlFor="ct-email" className="text-[11px] font-bold uppercase tracking-wider text-neutral-500">
-                E-Mail
-              </label>
-              <input
-                id="ct-email"
-                type="email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                placeholder="ihre@email.de"
-                className="w-full rounded-xl border border-neutral-200 bg-white px-4 py-3.5 text-[15px] text-neutral-900 outline-none transition-all placeholder:text-neutral-400 focus:border-neutral-400 focus:ring-4 focus:ring-neutral-100"
-                required
-              />
-            </div>
-
-            {/* Nachricht */}
-            <div className="flex flex-col gap-2">
-              <label htmlFor="ct-nachricht" className="text-[11px] font-bold uppercase tracking-wider text-neutral-500">
-                Nachricht
-              </label>
-              <textarea
-                id="ct-nachricht"
-                value={nachricht}
-                onChange={(e) => setNachricht(e.target.value)}
-                placeholder="Wie können wir Ihnen helfen?"
-                className="w-full rounded-xl border border-neutral-200 bg-white px-4 py-3.5 text-[15px] text-neutral-900 outline-none transition-all placeholder:text-neutral-400 focus:border-neutral-400 focus:ring-4 focus:ring-neutral-100 resize-y"
-                rows={5}
-                required
-              />
-            </div>
-
-            {/* Datenschutz */}
-            <label className="flex items-start gap-3 mt-2 cursor-pointer group">
-              <input
-                type="checkbox"
-                checked={datenschutz}
-                onChange={(e) => setDatenschutz(e.target.checked)}
-                className="mt-1 h-4 w-4 rounded border-neutral-300 text-red-600 focus:ring-red-600 transition-colors"
-                required
-              />
-              <span className="text-sm text-neutral-600 leading-relaxed group-hover:text-neutral-900 transition-colors">
-                Ich habe die{' '}
-                <span className="font-bold underline underline-offset-2 hover:text-red-600 transition-colors">
-                  Datenschutzerklärung
-                </span>{' '}
-                gelesen und bin mit der Verarbeitung meiner Daten einverstanden.
-              </span>
-            </label>
-
-            {/* Submit */}
-            <button
-              type="submit"
-              className="mt-6 inline-flex items-center justify-center gap-2 rounded-xl bg-red-600 px-8 py-4 text-[15px] font-semibold text-white transition-all hover:bg-red-700 hover:shadow-lg hover:shadow-red-600/20 active:scale-95 w-full sm:w-auto self-start"
-            >
-              <Send size={18} />
-              Nachricht senden
-            </button>
-
-            {/* Toast */}
-            <AnimatePresence>
-              {submitted && (
-                <motion.div
-                  initial={{ opacity: 0, y: 8 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  exit={{ opacity: 0 }}
-                  className="absolute bottom-6 left-1/2 -translate-x-1/2 flex w-max max-w-[90%] items-center gap-2 rounded-full bg-neutral-900 px-6 py-3 text-sm font-semibold text-white shadow-xl"
-                >
-                  <CheckCircle2 size={18} className="text-green-400 flex-shrink-0" />
-                  <span>Nachricht gesendet. Wir melden uns in Kürze.</span>
-                </motion.div>
-              )}
-            </AnimatePresence>
-          </motion.form>
-          </div>
-        </div>
-      </section>
     </main>
   );
 }
