@@ -9,13 +9,15 @@
     "lint": "next lint",
     "fix": "node fix.js",
     "fix-tokens": "node fix_tokens.js",
-    "extract-tokens": "node extract_tokens.js"
+    "extract-tokens": "node extract_tokens.js",
+    "audit": "node .agents/audit_agent_3/audit.js"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.4.0",
     "framer-motion": "^12.40.0",
     "lucide-react": "^1.17.0",
     "next": "16.2.7",
+    "puppeteer": "^25.1.0",
     "react": "19.2.4",
     "react-dom": "19.2.4",
     "react-hook-form": "^7.77.0",

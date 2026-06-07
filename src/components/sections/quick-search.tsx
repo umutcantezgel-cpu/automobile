@@ -105,7 +105,7 @@ export function QuickSearch() {
   return (
     <div className="w-full">
       {/* Tabs */}
-      <div className="flex items-center gap-2 overflow-x-auto pb-6 scrollbar-hide">
+      <div className="flex flex-wrap items-center gap-2 pb-6">
         {TABS.map((tab) => (
           <button
             key={tab.key}

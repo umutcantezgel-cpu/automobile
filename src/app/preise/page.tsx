@@ -706,9 +706,9 @@ function FAQItemComponent({ item, index, fadeUp }: { item: FAQItem; index: numbe
 /* ================================================================== */
 
 function ComparisonCell({ value }: { value: string | boolean }) {
-  if (value === true) return <Check className="w-5 h-5 text-green-600 mx-auto" />;
-  if (value === false) return <Minus className="w-5 h-5 text-neutral-300 mx-auto" />;
-  return <span className="font-medium text-neutral-900 text-sm whitespace-nowrap">{value}</span>;
+  if (value === true) return <Check className="w-4 h-4 md:w-5 md:h-5 text-green-600 mx-auto" />;
+  if (value === false) return <Minus className="w-4 h-4 md:w-5 md:h-5 text-neutral-300 mx-auto" />;
+  return <span className="font-medium text-neutral-900 text-[10px] md:text-sm whitespace-normal md:whitespace-nowrap leading-tight">{value}</span>;
 }
 
 /* ================================================================== */
@@ -750,7 +750,7 @@ export default function PreisePage() {
       <section className="w-full bg-neutral-900 text-white pb-32 pt-32 lg:pt-40 lg:pb-48 -mt-24 relative z-0 overflow-hidden clip-path-[polygon(0_0,100%_0,100%_calc(100%-4rem),0_100%)]">
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
           <div className="absolute inset-0 bg-[url('/images/hero-preise.png')] bg-cover bg-center opacity-10 mix-blend-overlay pointer-events-none" />
-          <div className="absolute -top-1/2 -right-1/4 w-[150%] h-[150%] bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-neutral-200/20 via-transparent to-transparent opacity-50 blur-3xl pointer-events-none" />        
+          <div className="absolute -top-1/2 -right-1/4 w-full md:w-[150%] h-full md:h-[150%] bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-neutral-200/20 via-transparent to-transparent opacity-50 blur-3xl pointer-events-none" />        
           <div className="absolute inset-0 bg-gradient-to-t from-neutral-900 via-neutral-900/80 to-transparent pointer-events-none" />
         </div>
         <div className="w-full max-w-7xl mx-auto px-4 md:px-8 relative z-10 flex flex-col items-center">
@@ -1187,17 +1187,17 @@ export default function PreisePage() {
             transition={{ duration: getDuration(0.5) }}
             className="w-full overflow-x-auto pb-8 -mx-4 px-4 md:mx-0 md:px-0 scrollbar-hide"
           >
-            <table className="w-full text-left border-collapse min-w-[800px] bg-white rounded-2xl shadow-sm overflow-hidden">
+            <table className="w-full text-left border-collapse min-w-full md:min-w-[800px] bg-white rounded-2xl shadow-sm overflow-hidden text-xs md:text-base">
               <thead>
                 <tr className="border-b-2 border-neutral-200">
-                  <th className="p-4 lg:p-6 font-bold text-neutral-900 w-1/4 bg-neutral-50/50">Feature</th>
-                  <th className="p-4 lg:p-6 font-bold text-neutral-900 w-1/4 text-center">Essential</th>
-                  <th className="p-4 lg:p-6 font-bold text-neutral-900 w-1/4 text-center bg-red-50/30">
+                  <th className="p-2 md:p-4 lg:p-6 font-bold text-neutral-900 w-1/4 bg-neutral-50/50 text-[10px] md:text-base leading-tight">Feature</th>
+                  <th className="p-2 md:p-4 lg:p-6 font-bold text-neutral-900 w-1/4 text-center text-[10px] md:text-base leading-tight">Essential</th>
+                  <th className="p-2 md:p-4 lg:p-6 font-bold text-neutral-900 w-1/4 text-center bg-red-50/30 text-[10px] md:text-base leading-tight">
                     <span className="flex items-center justify-center gap-1.5 text-red-600">
-                      Local Dominance <Sparkles size={14} className="text-red-500" />
+                      Local Dominance <Sparkles className="w-3 h-3 md:w-4 md:h-4 text-red-500" />
                     </span>
                   </th>
-                  <th className="p-4 lg:p-6 font-bold text-neutral-900 w-1/4 text-center">Enterprise</th>
+                  <th className="p-2 md:p-4 lg:p-6 font-bold text-neutral-900 w-1/4 text-center text-[10px] md:text-base leading-tight">Enterprise</th>
                 </tr>
               </thead>
               <tbody>
@@ -1210,7 +1210,7 @@ export default function PreisePage() {
                       <tr key={`${row.category}-${row.feature}-${i}`} className="border-b border-neutral-100 last:border-0 hover:bg-neutral-50/50 transition-colors">
                         {showCategory ? (
                           <td
-                            className="bg-neutral-100/50 p-3 px-6 font-bold text-xs uppercase tracking-wider text-neutral-500"
+                            className="bg-neutral-100/50 p-2 md:p-3 px-3 md:px-6 font-bold text-[10px] md:text-xs uppercase tracking-wider text-neutral-500"
                             colSpan={4}
                           >
                             {row.category}
@@ -1218,16 +1218,16 @@ export default function PreisePage() {
                         ) : null}
                         {!showCategory && (
                           <>
-                            <td className="p-4 lg:px-6 font-medium text-neutral-700 border-r border-neutral-100/50">
+                            <td className="p-2 md:p-4 lg:px-6 font-medium text-neutral-700 border-r border-neutral-100/50 text-[10px] md:text-base leading-tight">
                               {row.feature}
                             </td>
-                            <td className="p-4 text-center border-r border-neutral-100/50">
+                            <td className="p-2 md:p-4 text-center border-r border-neutral-100/50">
                               <ComparisonCell value={row.tier1} />
                             </td>
-                            <td className="p-4 text-center border-r border-neutral-100/50 bg-red-50/10">
+                            <td className="p-2 md:p-4 text-center border-r border-neutral-100/50 bg-red-50/10">
                               <ComparisonCell value={row.tier2} />
                             </td>
-                            <td className="p-4 text-center">
+                            <td className="p-2 md:p-4 text-center">
                               <ComparisonCell value={row.tier3} />
                             </td>
                           </>
@@ -1327,7 +1327,7 @@ export default function PreisePage() {
             className="w-full"
           >
             <div className="bg-neutral-900 text-white rounded-[2.5rem] p-10 md:p-16 lg:p-24 flex flex-col items-center text-center gap-8 relative overflow-hidden shadow-2xl">
-              <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-red-600/30 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/3 pointer-events-none" />
+              <div className="absolute top-0 right-0 w-[300px] md:w-[600px] h-[300px] md:h-[600px] bg-red-600/30 rounded-full blur-[100px] -translate-y-1/2 translate-x-0 md:translate-x-1/3 pointer-events-none" />
               <Calculator className="w-16 h-16 text-red-500 mb-2 relative z-10" />
               <h2 className="font-display text-3xl md:text-5xl lg:text-6xl font-bold tracking-tight m-0 max-w-3xl relative z-10">
                 Was kostet Sie Ihre aktuelle Website?

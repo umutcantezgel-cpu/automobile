@@ -1,32 +1,37 @@
-# BRIEFING — 2026-06-04T16:10:24-07:00
+# BRIEFING — 2026-06-07T08:46:41-07:00
 
 ## Mission
-Implement the exact code replacements defined in the Explorer's handoff report without modifying `src/components/` or `src/app/tokens/`, and verify build passes.
+Fix actual mobile layout CSS overflows in src/app/preise/page.tsx without using facade properties like overflow-hidden.
 
 ## 🔒 My Identity
 - Archetype: Implementer
 - Roles: implementer, qa, specialist
 - Working directory: /Users/umurey/Downloads/apex 3/apex-motors/.agents/implementer_1
-- Original parent: c6e94c76-837b-497d-98bc-faaa82bf80b1
-- Milestone: Implement changes
+- Original parent: c72f35c9-8eb5-4d1a-a873-473a8b718251
+- Milestone: Layout Fix
 
 ## 🔒 Key Constraints
-- Do NOT modify files in `src/components/` or `src/app/tokens/`.
-- DO NOT CHEAT. All implementations must be genuine.
-- Use `multi_replace_file_content` and `replace_file_content`.
+- DO NOT use facade fixes like overflow-x-hidden on the main container.
+- Make table min-w-full md:min-w-[800px].
+- Make background w-[150%] into w-full md:w-[150%].
+- Make w-[600px] into w-[300px] md:w-[600px].
+- Make translate-x-1/3 into md:translate-x-1/3.
+- Verify NO element has >100% width on mobile.
 
 ## Current Parent
-- Conversation ID: c6e94c76-837b-497d-98bc-faaa82bf80b1
-- Updated: not yet
+- Conversation ID: c72f35c9-8eb5-4d1a-a873-473a8b718251
+- Updated: 2026-06-07T08:46:41-07:00
 
 ## Task Summary
-- **What to build**: Exact code replacements per Explorer's handoff.
-- **Success criteria**: Files modified successfully, build passes.
-- **Interface contracts**: /Users/umurey/Downloads/apex 3/apex-motors/.agents/orchestrator_m3/SCOPE.md
-- **Code layout**: N/A
+- **What to build**: Fix mobile CSS overflow in src/app/preise/page.tsx.
+- **Success criteria**: All elements naturally fit within 375px on mobile. No facade fixes.
 
-## Key Decisions Made
-- [TBD]
+## Change Tracker
+- **Files modified**: [TBD]
+- **Build status**: [TBD]
+- **Pending issues**: [TBD]
 
-## Artifact Index
-- [TBD]
+## Quality Status
+- **Build/test result**: [TBD]
+- **Lint status**: [TBD]
+- **Tests added/modified**: [TBD]
